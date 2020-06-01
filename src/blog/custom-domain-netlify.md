@@ -1,10 +1,10 @@
 ---
 title: Configure a Custom Domain in Netlify using GoDaddy Hosting Provider and GitHub
-date: 2020-01-18
+date: 2020-01-18T00:00:00.000Z
 tags:
   - Netlify
 category: Web Development
-thumbnail: /src/assets/images/WebsiteUpdate.jpg
+thumbnail: ""
 ---
 Follow these steps to configure a custom domain in Netlify using GoDaddy Hosting Provider and GitHub.
 
