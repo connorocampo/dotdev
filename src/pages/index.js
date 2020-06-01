@@ -39,6 +39,7 @@ export default ({ data }) => (
           content="The home page for Connor Ocampo's website."
         />
         <link rel="icon" href={favicon} />
+
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Helmet>
       <Header />
@@ -48,6 +49,16 @@ export default ({ data }) => (
       <RecentWork />
       <Footer />
     </Layout>
+    <script>
+      if (window.netlifyIdentity){" "}
+      {window.netlifyIdentity.on("init", (user) => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/"
+          })
+        }
+      })}
+    </script>
   </ThemeProvider>
 )
 
