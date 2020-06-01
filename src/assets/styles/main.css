@@ -478,6 +478,10 @@ p {
   width: 740px;
 }
 
+.article-content p {
+  margin: 1em 0;
+}
+
 @media screen and (max-width: 1196px) {
   .blog-post-container {
     display: flex;
