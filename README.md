@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/acd8521b-daf0-4ccd-b413-581882f27115/deploy-status)](https://app.netlify.com/sites/admiring-saha-d8d745/deploys)
+
 <h1>About this project</h1>
 <p>This is v3 my personal website that was built on Gatsby (based off Gatsby's hello-world starter) and React.</p>
 
