@@ -9,12 +9,13 @@ import themeSettings from "../components/base/settings"
 
 import Layout from "../components/base/Layout"
 import Header from "../components/base/Header"
-import PostsList from "../components/PostList"
+import Page from "../components/base/Page"
+import PostList from "../components/PostList"
 import Footer from "../components/base/Footer"
 
 const Heading = styled.div`
-  font-family: "Open Sans Heavy";
-  font-size: ${props => props.theme.size.headerBig};
+  font-family: "Rubik Bold";
+  font-size: ${(props) => props.theme.size.header};
   margin: 100px 0 50px 0;
   text-transform: uppercase;
 `
@@ -37,15 +38,15 @@ const CategoryTemplate = ({ location, pageContext, data }) => {
           />
         </Helmet>
         <Header />
-        <div>
+        <Page>
           {/* <SEO title={`Posts in category "${category}"`} /> */}
 
           <div style={{ marginBottom: "100px" }}>
             <Heading>{category}</Heading>
             <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-            <PostsList postEdges={data.allMarkdownRemark.edges} />
+            <PostList postEdges={data.allMarkdownRemark.edges} />
           </div>
-        </div>
+        </Page>
         <Footer />
       </Layout>
     </ThemeProvider>
