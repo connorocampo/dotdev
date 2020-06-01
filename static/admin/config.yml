@@ -18,7 +18,7 @@ collections:
       - { label: "Featured Image", name: "thumbnail", widget: "image" }
       - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: "/pages" # Used in routes, e.g., /admin/collections/page
+  - name: "pages" # Used in routes, e.g., /admin/collections/pages
     label: "Pages" # Used in the UI
     folder: "src/pages" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
