@@ -20,7 +20,6 @@ import favicon from "../../static/favicon.ico"
 export const PostTitle = styled.h1`
   margin-bottom: 15px;
 `
-
 export const Image = styled.img`
   border-radius: 50%;
   border: 5px solid #0f0d16;
