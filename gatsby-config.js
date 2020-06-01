@@ -34,6 +34,7 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-analytics`,
