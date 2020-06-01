@@ -19,7 +19,7 @@ export const Container = styled.div`
 `
 
 export const NavItems = styled.span`
-  font-size: ${props => props.theme.size.bodySmall};
+  font-size: ${(props) => props.theme.size.bodySmall};
 `
 
 // Component
@@ -35,7 +35,7 @@ class Header extends React.Component {
         </span>
         <NavItems className="nav-items navbar-nav">
           <Link to="/blog/" className="is-black nav-item articles-link-hide">
-            Articles
+            Blog
           </Link>
           <a
             href="mailto:connorocampo@gmail.com"
