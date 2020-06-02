@@ -30,10 +30,13 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
-        ssr: false,
       },
     },
     `gatsby-transformer-remark`,
+    `babel-plugin-styled-components`,
+    {
+      ssr: false,
+    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
