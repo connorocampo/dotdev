@@ -30,11 +30,8 @@ export const Image = styled.img`
   width: 200px;
 `
 
-export const Tagline = styled.span`
+export const Tagline = styled.h2`
   color: #0f0d16;
-  font-family: "Rubik Bold", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: ${(props) => props.theme.size.big};
   text-align: center;
   line-height: 1;
   margin-bottom: 20px;
