@@ -39,7 +39,10 @@ export default ({ data }) => (
           content="The home page for Connor Ocampo's website."
         />
         <link rel="icon" href={favicon} />
-
+        <meta
+          name="google-site-verification"
+          content="OqOQbWylk7kR7wIDR-1m8TwFGVjCb6s-N3Hjf7ls-qw"
+        />
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Helmet>
       <Header />
