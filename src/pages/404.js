@@ -16,7 +16,7 @@ import ByeCat from "../assets/images/ByeCat.gif"
 
 const Heading = styled.h1`
   font-family: "Inter Black", "Open Sans Heavy";
-  font-size: ${props => props.theme.size.headerBig};
+  font-size: ${(props) => props.theme.size.header};
   margin: 100px 0 50px 0;
   text-transform: uppercase;
 `
