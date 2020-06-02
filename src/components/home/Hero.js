@@ -3,10 +3,9 @@ import styled from "styled-components"
 import { ThemeProvider } from "styled-components"
 import themeSettings from "../../components/base/settings"
 
-// Images
+// Imports
 
 import AvatarBitmoji from "../../assets/images/AvatarBitmoji.png"
-
 import "../../assets/styles/main.css"
 
 /*
@@ -31,8 +30,10 @@ export const Image = styled.img`
   width: 200px;
 `
 
-export const Tagline = styled.h1`
+export const Tagline = styled.h2`
+  color: #0f0d16;
   font-family: "Rubik Bold";
+  line-height: 1;
   margin-bottom: 20px;
   text-align: center;
 `
@@ -58,26 +59,11 @@ class Hero extends React.Component {
             alt="Connor Ocampo"
             className="bio-thumbnail"
           />
-          <Tagline className="is-black bio-tagline">
-            Front-end Developer
-          </Tagline>
+          <Tagline>Front-end Developer</Tagline>
           <Blurb className="bio-blurb">
             Hey, I'm Connor. I{" "}
             <span className="is-animated-gradient">code</span> modern websites.
           </Blurb>
-          {/* <a
-            href="mailto:connorocampo@gmail.com"
-            className="is-black nav-item mobile-contact-btn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={email}
-              alt="email icon"
-              style={{ marginRight: "10px", marginBottom: "-1.5px" }}
-            />
-            Contact
-          </a> */}
         </Container>
       </ThemeProvider>
     )
