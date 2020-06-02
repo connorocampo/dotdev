@@ -32,7 +32,7 @@ export const Image = styled.img`
 
 export const Tagline = styled.h2`
   color: #0f0d16;
-  font-family: "Rubik Bold";
+  text-align: center;
   line-height: 1;
   margin-bottom: 20px;
   text-align: center;
@@ -40,9 +40,6 @@ export const Tagline = styled.h2`
 
 export const Blurb = styled.p`
   font-size: 36px;
-  font-family: "Rubik Light", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-align: center;
 `
 
 /*
