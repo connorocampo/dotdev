@@ -33,10 +33,6 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    `babel-plugin-styled-components`,
-    {
-      ssr: false,
-    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
