@@ -30,7 +30,7 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
-        ssr: false,
+        ssr: true,
       },
     },
     `gatsby-transformer-remark`,
