@@ -40,6 +40,7 @@ export const Tagline = styled.h2`
 
 export const Blurb = styled.span`
   font-size: 36px;
+  text-align: center;
 `
 
 /*
