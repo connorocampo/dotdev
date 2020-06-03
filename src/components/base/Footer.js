@@ -58,7 +58,7 @@ class Footer extends React.Component {
           </h2>
           <p
             className="footer-text-mobile"
-            style={{ textAlign: "center", width: "282px" }}
+            style={{ textAlign: "center", width: "235px" }}
           >
             Contact via carrier pigeon is preferred, though an email will
             suffice.
