@@ -3,6 +3,7 @@ layout: blog
 title: Replace Loops using Recursion (Line-by-line Solution Explanation)
 date: 2020-06-03T04:32:03.073Z
 ---
+
 This is a line-by-line code explanation of <a
               href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/replace-loops-using-recursion"
               target="_blank"
@@ -29,7 +30,7 @@ So, I searched YouTube in hopes that someone could explain it in a way that clic
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lMBVwYrmFZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-embed"></iframe>
 
-The keyword he used to explain recursion that clicked for me was that the recursive case is basically *waiting in line* to be solved before the function could return a value.
+The keyword he used to explain recursion that clicked for me was that the recursive case is basically _waiting in line_ to be solved before the function could return a value.
 
 So, the way I understand recursive functions is that a recursive statement will be executed until it meets the base case. Then, since all previous statements were solved, the function can return a value.
 
@@ -47,7 +48,7 @@ The above code is the solution.
 
 In order to understand this solution better, I had to figure out the correct way to write out the recursive statement. Building a solid JavaScript foundation in important to me, so I'm making it a point to not move on until I truly understand how every line of code works.
 
-## Here’s the Recursive Case Written Out Line-by-Line
+## Recursive Case Written Out Line-by-Line
 
 In this example we’ll create an array call are with values 1 through 5. We'll also create and initialize a variable n to equal 3.
 
