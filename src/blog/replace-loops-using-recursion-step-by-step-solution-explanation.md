@@ -26,6 +26,7 @@ So, the way I understand recursive functions is that a recursive statement will 
 
 Here’s the freeCodeCamp solution using an example array written out line-by-line!
 
+<div style="overflow-x: auto">
 ```
 function sum(arr, n) {
   if (n <= 0) {
@@ -35,7 +36,7 @@ function sum(arr, n) {
   }
 }
 ```
-
+</div>
 The above code is the solution.
 
 This alone was enough to help me understand the recursive concept. I had to figure out the correct way to write out the recursive statement in order for me to really understand how it all made sense.

@@ -38,7 +38,7 @@ pre code {
 
 /* ANCHOR STYLES */
 
-.article a {
+.article p a {
   background: linear-gradient(90deg, #ff8a00, #e52e71);
   background-clip: text;
   -webkit-background-clip: text;
