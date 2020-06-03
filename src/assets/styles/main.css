@@ -408,9 +408,8 @@ span {
 
 .about-the-author-card {
   background: white;
-  border: 1px solid #dae1e7;
   border-radius: 25px;
-  box-shadow: 10px 10px 20px #e0e0e0;
+  box-shadow: 10px 10px 20px #ccc;
   margin: 0 auto 100px auto;
   padding: 50px 1em;
   width: 315px;

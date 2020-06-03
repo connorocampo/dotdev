@@ -12,12 +12,8 @@ import favicon from "../../static/favicon.ico"
 
 import Layout from "../components/base/Layout"
 import Header from "../components/base/Header"
+import Sidebar from "../components/base/Sidebar"
 import Footer from "../components/base/Footer"
-
-// Media
-
-import AvatarBitmoji from "../assets/images/AvatarBitmoji.png"
-import BookCover from "../assets/images/BookCover.jpeg"
 
 const Heading = styled.h1`
   margin-bottom: 15px;
@@ -40,22 +36,6 @@ const Excerpt = styled.p`
   font-size: 24px;
   line-height: 1.5;
   margin-bottom: 15px;
-`
-
-const AboutTheAuthorBlurb = styled.p`
-  font-family: "Rubik Light", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
-  margin: 0 auto;
-`
-
-export const Image = styled.img`
-  border-radius: 50%;
-  border: 5px solid #0f0d16;
-  height: 200px;
-  margin-bottom: 50px;
-  width: 200px;
 `
 
 export default class BlogList extends React.Component {
@@ -161,7 +141,9 @@ export default class BlogList extends React.Component {
             </div>
             {/* /.articles */}
 
-            <div className="sidebar">
+            <Sidebar />
+
+            {/* <div className="sidebar">
               <div className="about-the-author-card">
                 <Image src={AvatarBitmoji} alt="Connor Ocampo" />
                 <p className="h4" style={{ marginBottom: " 30px" }}>
@@ -173,7 +155,6 @@ export default class BlogList extends React.Component {
                   pavement, really nice people, and oxford commas.
                 </AboutTheAuthorBlurb>
               </div>
-              {/* /.about-the-author-card  */}
 
               <div className="book">
                 <a
@@ -200,7 +181,7 @@ export default class BlogList extends React.Component {
                   A complete guide for new and aspiring developers
                 </p>
               </div>
-            </div>
+            </div> */}
             {/* /.sidebar */}
           </div>
           {/* /.blog-container */}

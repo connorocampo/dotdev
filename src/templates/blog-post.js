@@ -10,11 +10,11 @@ import themeSettings from "../components/base/settings"
 // Components
 import Layout from "../components/base/Layout"
 import Header from "../components/base/Header"
+import Sidebar from "../components/base/Sidebar"
 import Footer from "../components/base/Footer"
 
 // Media
-import AvatarBitmoji from "../assets/images/AvatarBitmoji.png"
-import BookCover from "../assets/images/BookCover.jpeg"
+
 import favicon from "../../static/favicon.ico"
 
 export const PostTitle = styled.h1`
@@ -120,40 +120,7 @@ export default ({ data, pageContext }) => {
           </div>
           {/* /.article */}
 
-          <div className="sidebar">
-            <div className="about-the-author-card">
-              <Image src={AvatarBitmoji} alt="Connor Ocampo" />
-              <p className="h4" style={{ marginBottom: " 30px" }}>
-                About the Author
-              </p>
-              <AboutTheAuthorBlurb>
-                Hey, I’m Connor Ocampo. I’m a self-taught front-end developer
-                based in Boca Raton, FL. I enjoy long bike rides on the
-                pavement, really nice people, and oxford commas.
-              </AboutTheAuthorBlurb>
-            </div>
-            {/* /.about-the-author-card  */}
-
-            <div className="book">
-              <img
-                src={BookCover}
-                alt="Your First Year in Code Book"
-                style={{ height: "450px", width: "350px" }}
-              />
-              <p
-                className="book-text"
-                style={{
-                  fontSize: "18px",
-                  lineHeight: "1.5",
-                  marginTop: "25px",
-                  marginBottom: "305px",
-                }}
-              >
-                A complete guide for new and aspiring developers
-              </p>
-            </div>
-          </div>
-          {/* /.sidebar */}
+          <Sidebar />
         </div>
         {/* /.blog-post-container */}
 
