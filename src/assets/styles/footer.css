@@ -86,12 +86,6 @@ i {
 
 /* Responsive */
 
-@media (min-width: 1200px) {
-  .copyright-container-mobile {
-    display: none;
-  }
-}
-
 @media (max-width: 1200px) {
   .cta-container {
     border-radius: 0 !important;
@@ -114,23 +108,5 @@ i {
 
   .social-media-mobile {
     margin: 0 auto !important;
-  }
-
-  .copyright-container-mobile {
-    margin-top: -75px;
-    padding-bottom: 20px;
-  }
-
-  .copyright-social-media-icons-mobile {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 25px;
-  }
-
-  .copyright-mobile {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
   }
 }
