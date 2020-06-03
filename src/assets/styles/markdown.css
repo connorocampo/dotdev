@@ -1,0 +1,46 @@
+/* CODE */
+
+pre {
+  background: #0f0d16;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 20px;
+  padding: 0;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -ms-word-break: normal;
+  word-break: normal;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  position: relative;
+  line-height: 28px;
+  min-width: 100px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+pre code {
+  scrollbar-color: #666;
+  scrollbar-width: 0.5em;
+  background: 0 0;
+  padding: 15px 20px 12px 22px;
+  white-space: pre;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+  overflow-x: scroll;
+  max-width: 100%;
+  min-width: 100px;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+/* ANCHOR STYLES */
+
+.article a {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

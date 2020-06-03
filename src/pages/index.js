@@ -10,6 +10,7 @@ import themeSettings from "../components/base/settings"
 import "../assets/styles/main.css"
 import "../assets/styles/header.css"
 import "../assets/styles/footer.css"
+import "../assets/styles/markdown.css"
 
 // Components
 

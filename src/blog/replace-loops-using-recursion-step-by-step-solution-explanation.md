@@ -3,23 +3,24 @@ layout: blog
 title: Replace Loops using Recursion (Line-by-line Solution Explanation)
 date: 2020-06-03T04:32:03.073Z
 ---
-This is a line-by-line code explanation of [freeCodeCamp’s Replace Loops using Recursion module](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/replace-loops-using-recursion) in their Basic JavaScript section.
+
+This is a line-by-line code explanation of <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/replace-loops-using-recursion" target="_blank" rel="noopener noreferrer">freeCodeCamp’s Replace Loops using Recursion module</a> in their Basic JavaScript section.
 
 As of today, Wednesday June 3rd, 2020, this is what the code challenge looks like:
 
 ```
 function sum(arr, n) {
  // Only change code below this line
- 
+
  // Only change code above this line
 }
 ```
 
 After reading through the directions, I still had trouble solving the problem in code so I used the ‘Get Help’ button to Watch a Video (it’s actually an article on explaining recursion) and look at the Get a Hint page for a better understanding. Still, after spending around 2 hours going between reading the article and looking over the solution, I couldn’t quite figure out the whole recursion concept.
 
-So, I searched YouTube in hopes that someone could explain it in a way that clicked for me. That’s when I found Colt Steele’s video Recursion Crash Course:<https://www.youtube.com/watch?v=lMBVwYrmFZQ>.
+So, I searched YouTube in hopes that someone could explain it in a way that clicked for me. That’s when I found <a href="https://www.youtube.com/watch?v=lMBVwYrmFZQ" target="_blank" rel="noopener noreferrer">Colt Steele’s video Recursion Crash Course</a>.
 
-The keyword he used to explain recursion that clicked for me was that the recursive case is basically *waiting in line* to be solved before the function can return a value.
+The keyword he used to explain recursion that clicked for me was that the recursive case is basically _waiting in line_ to be solved before the function can return a value.
 
 So, the way I understand recursive functions is that a recursive statement will be executed until it meets the base case. Then, since all previous statements were solved, the function can return a value.
 
