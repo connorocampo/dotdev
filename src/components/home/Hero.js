@@ -57,11 +57,8 @@ class Hero extends React.Component {
             alt="Connor Ocampo"
             className="bio-thumbnail"
           />
-          <Tagline>Front-end Developer</Tagline>
-          <Blurb className="bio-blurb">
-            Hey, I'm Connor. I{" "}
-            <span className="is-animated-gradient">code</span> modern websites.
-          </Blurb>
+          <Tagline>Hey there, I'm Connor.</Tagline>
+          <Blurb className="bio-blurb">Front-end Developer</Blurb>
         </Container>
       </ThemeProvider>
     )
