@@ -17,7 +17,7 @@ function sum(arr, n) {
 
 After reading through the directions, I still had trouble solving the problem in code so I used the ‘Get Help’ button to Watch a Video (it’s actually an article on explaining recursion) and look at the Get a Hint page for a better understanding. Still, after spending around 2 hours going between reading the article and looking over the solution, I couldn’t quite figure out the whole recursion concept.
 
-So, I searched YouTube in hopes that someone could explain it in a way that clicked for me. That’s when I found Colt Steele’s video Recursion Crash Course:<https://www.youtube.com/watch?v=lMBVwYrmFZQ>.
+So, I searched YouTube in hopes that someone could explain it in a way that clicked for me. That’s when I found Colt Steele’s video Recursion Crash Course: <https://www.youtube.com/watch?v=lMBVwYrmFZQ>.
 
 The keyword he used to explain recursion that clicked for me was that the recursive case is basically _waiting in line_ to be solved before the function can return a value.
 
@@ -25,17 +25,16 @@ So, the way I understand recursive functions is that a recursive statement will 
 
 Here’s the freeCodeCamp solution using an example array written out line-by-line!
 
-<div style="overflow-x: auto">
 ```javascript
 function sum(arr, n) {
   if (n <= 0) {
-    return0;
-  } else{
-    return sum(arr,n-1)+arr\[n-1];
+    return0
+  } else {
+    return sum(arr, n - 1) + arrarrarrarr\[n - 1]
   }
 }
 ```
-</div>
+
 The above code is the solution.
 
 This alone was enough to help me understand the recursive concept. I had to figure out the correct way to write out the recursive statement in order for me to really understand how it all made sense.
