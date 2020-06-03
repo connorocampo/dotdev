@@ -18,6 +18,7 @@ import Footer from "../components/base/Footer"
 import favicon from "../../static/favicon.ico"
 
 export const PostTitle = styled.h1`
+  font-weight: 800;
   margin-bottom: 15px;
 `
 export const Image = styled.img`

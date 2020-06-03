@@ -16,6 +16,7 @@ import Sidebar from "../components/base/Sidebar"
 import Footer from "../components/base/Footer"
 
 const Heading = styled.h1`
+  font-weight: 800;
   margin-bottom: 15px;
   text-transform: uppercase;
 `
@@ -28,6 +29,7 @@ const PostCount = styled.p`
 
 const PostTitle = styled.h3`
   color: #0f0d16;
+  font-weight: 800;
   margin-bottom: 15px;
 `
 
@@ -64,7 +66,7 @@ export default class BlogList extends React.Component {
           <Header />
           <div className="blog-container">
             <div className="articles">
-              <Heading className="page-title">Articles</Heading>
+              <Heading>Articles</Heading>
               <PostCount>{data.allMarkdownRemark.totalCount} Posts</PostCount>
 
               {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -142,47 +144,6 @@ export default class BlogList extends React.Component {
             {/* /.articles */}
 
             <Sidebar />
-
-            {/* <div className="sidebar">
-              <div className="about-the-author-card">
-                <Image src={AvatarBitmoji} alt="Connor Ocampo" />
-                <p className="h4" style={{ marginBottom: " 30px" }}>
-                  About the Author
-                </p>
-                <AboutTheAuthorBlurb>
-                  Hey, I’m Connor Ocampo. I’m a self-taught front-end developer
-                  based in Boca Raton, FL. I enjoy long bike rides on the
-                  pavement, really nice people, and oxford commas.
-                </AboutTheAuthorBlurb>
-              </div>
-
-              <div className="book">
-                <a
-                  href="https://leanpub.com/firstyearincode"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="sidebar-book"
-                >
-                  <img
-                    src={BookCover}
-                    alt="Your First Year in Code Book"
-                    style={{ height: "450px", width: "350px" }}
-                  />
-                </a>
-                <p
-                  className="book-text"
-                  style={{
-                    fontSize: "18px",
-                    lineHeight: "1.5",
-                    marginTop: "25px",
-                    marginBottom: "305px",
-                  }}
-                >
-                  A complete guide for new and aspiring developers
-                </p>
-              </div>
-            </div> */}
-            {/* /.sidebar */}
           </div>
           {/* /.blog-container */}
           <Footer />

@@ -39,7 +39,7 @@ export default () => (
         <link rel="icon" href={favicon} />
       </Helmet>
       <Header />
-      <Heading className="page-title">404 Error</Heading>
+      <Heading>404 Error</Heading>
       <p>
         Whoops! The page you are looking for does not exist. Feel free to stay
         distracted by watching this looping cat gif or use the navigation
