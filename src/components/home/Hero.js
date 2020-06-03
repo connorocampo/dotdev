@@ -5,7 +5,7 @@ import themeSettings from "../../components/base/settings"
 
 // Imports
 
-import AvatarBitmoji from "../../assets/images/AvatarBitmoji.png"
+// import AvatarBitmoji from "../../assets/images/AvatarBitmoji.png"
 import "../../assets/styles/main.css"
 
 /*
@@ -13,6 +13,7 @@ import "../../assets/styles/main.css"
  */
 
 export const Container = styled.div`
+  // background: pink;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -21,26 +22,28 @@ export const Container = styled.div`
   padding: 0 1em;
 `
 
-export const Image = styled.img`
-  border-radius: 50%;
-  border: 5px solid #0f0d16;
-  height: 200px;
-  margin-top: -100px;
-  margin-bottom: 30px;
-  width: 200px;
-`
+// export const Image = styled.img`
+//   border-radius: 50%;
+//   border: 5px solid #0f0d16;
+//   height: 200px;
+//   margin-top: -100px;
+//   margin-bottom: 30px;
+//   width: 200px;
+// `
 
-export const Tagline = styled.h2`
+export const Tagline = styled.h1`
   color: #0f0d16;
-  text-align: center;
   line-height: 1;
   margin-bottom: 20px;
-  text-align: center;
+  margin-left: -3px;
+  @media screen and (max-width: 735px) {
+    font-size: 42px;
+  }
 `
 
 export const Blurb = styled.span`
-  font-size: 36px;
-  text-align: center;
+  // font-size: 36px;
+  font-size: 18px;
 `
 
 /*
@@ -52,13 +55,15 @@ class Hero extends React.Component {
     return (
       <ThemeProvider theme={themeSettings}>
         <Container className="bio-container">
-          <Image
+          {/* <Image
             src={AvatarBitmoji}
             alt="Connor Ocampo"
             className="bio-thumbnail"
-          />
-          <Tagline>Hey there, I'm Connor.</Tagline>
-          <Blurb className="bio-blurb">Front-end Developer</Blurb>
+          /> */}
+          <div style={{ marginTop: "-100px" }}>
+            <Blurb>Front-end Developer</Blurb>
+            <Tagline>Connor Ocampo</Tagline>
+          </div>
         </Container>
       </ThemeProvider>
     )
