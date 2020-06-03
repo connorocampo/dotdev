@@ -38,11 +38,13 @@ pre code {
 /* ANCHOR STYLES */
 
 .article p a {
-  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  /* background: linear-gradient(90deg, #ff8a00, #e52e71);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  word-break: break-word;
+  word-break: break-word; */
+  border-bottom: 1px solid #ff8a00;
+  color: #0f0d16;
 }
 
 /* YOUTUBE EMBED */
