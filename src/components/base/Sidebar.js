@@ -21,7 +21,7 @@ export const Image = styled.img`
 const AboutTheAuthorBlurb = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   margin: 0 auto;
 `
@@ -44,8 +44,8 @@ class Sidebar extends React.Component {
           </p>
           <AboutTheAuthorBlurb>
             Hey, I’m Connor Ocampo. I’m a self-taught front-end developer based
-            in Boca Raton, FL. I enjoy long bike rides on the pavement, really
-            nice people, and oxford commas.
+            in Boca Raton, FL. I enjoy long bike rides on the pavement, nice
+            people, and oxford commas.
           </AboutTheAuthorBlurb>
         </div>
         {/* /.about-the-author-card  */}
@@ -64,12 +64,10 @@ class Sidebar extends React.Component {
             />
           </a>
           <p
-            className="book-text"
             style={{
-              fontSize: "18px",
               lineHeight: "1.5",
-              marginTop: "25px",
-              marginBottom: "305px",
+              margin: "25px auto 305px auto",
+              width: "300px",
             }}
           >
             A complete guide for new and aspiring developers

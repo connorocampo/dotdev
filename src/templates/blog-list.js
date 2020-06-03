@@ -36,6 +36,7 @@ const PostTitle = styled.h3`
 const Excerpt = styled.p`
   color: #0f0d16;
   font-size: 24px;
+  font-size: 20px;
   line-height: 1.5;
   margin-bottom: 15px;
 `
