@@ -39,60 +39,34 @@ The above code is the solution.
 
 This alone was enough to help me understand the recursive concept. I had to figure out the correct way to write out the recursive statement in order for me to really understand how it all made sense.
 
-
-
 So, here’s the recursive case written out line-by-line:
-
-
 
 In this example we’ll create an array with values 1-5, and initialize variable n to equal 3;
 
-
-
-var arr = \[1, 2, 3, 4, 5];
-
-Var n = 3;
-
-
+```
+var arr = [1, 2, 3, 4, 5];
+var n = 3;
 
 // Our recursive case
-
-return sum(arr, n - 1) + arr\[n-1];
-
-
+return sum(arr, n - 1) + arr[n-1];
 
 // Factor in n to solve
-
-sum(arr, 3 - 1) + arr\[3 - 1]
-
-sum(arr, 2) + arr\[2]
-
+sum(arr, 3 - 1) + arr[3 - 1]
+sum(arr, 2) + arr[2]
 sum(arr,2) + 3;
 
-
-
 // Now, n = 2, so we need to plug that into our recursive case
-
-sum(arr, 2 -1) + arr\[2 - 1];
-
-sum(arr, 1) + arr\[1];
-
+sum(arr, 2 -1) + arr[2 - 1];
+sum(arr, 1) + arr[1];
 sum(arr, 1) + 2;
 
-
-
 // Now, n = 1, so we need to plug that into our recursive case
-
-sum(arr, 1 - 1) + arr\[1 - 1];
-
-sum(arr, 0) + arr\[0];
+sum(arr, 1 - 1) + arr[1 - 1];
+sum(arr, 0) + arr[0];
 
 // Refer back to our original function to see that sum(arr, 0) is our base case, which evaluates to 0!
-
 0 + 1 = 1;
 
-
-
 // From here we can add up all the numbers from each time we solved for n.
-
 3 + 2 + 1 = 6
+```
