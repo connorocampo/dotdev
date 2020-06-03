@@ -8,7 +8,6 @@ import ProjectJS from "../../assets/images/ProjectJS.png"
 import ProjectToDo from "../../assets/images/ProjectToDo.png"
 import ProjectDroneWorld from "../../assets/images/ProjectDroneWorld.png"
 import ProjectCharmCity from "../../assets/images/ProjectCharmCity.png"
-import github from "../../assets/images/icons/github.svg"
 
 /*
  * Styles
@@ -24,8 +23,8 @@ export const Container = styled.div`
 `
 
 export const RecentWorkText = styled.p`
-  font-family: "Rubik Light", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 36px;
   margin-bottom: 50px;
   text-align: center;
@@ -198,14 +197,13 @@ class RecentWork extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src={github}
-                alt="github icon"
+              <i
+                class="fab fa-github is-black"
                 style={{
                   marginRight: "10px",
-                  height: "28px",
                 }}
-              />
+              ></i>
+
               <span className="is-gradient">View code in GitHub</span>
             </a>
           </div>

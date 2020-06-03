@@ -39,6 +39,11 @@ export default ({ data }) => (
           content="The home page for Connor Ocampo's website."
         />
         <link rel="icon" href={favicon} />
+        <script
+          src="https://kit.fontawesome.com/2641fe0f3e.js"
+          crossorigin="anonymous"
+        ></script>
+
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Helmet>
       <Header />

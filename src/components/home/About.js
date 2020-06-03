@@ -14,8 +14,8 @@ export const Section = styled.section`
 `
 
 export const AboutText = styled.p`
-  font-family: "Rubik Light", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 36px;
   line-height: 1.5;
   max-width: 1000px;

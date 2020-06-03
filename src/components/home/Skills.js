@@ -68,13 +68,12 @@ class Skills extends React.Component {
               <Icon src={Dev} alt="development icon" />
               <ColumnHeader>Front-end Development</ColumnHeader>
               <ColumnText style={{ marginBottom: "30px" }}>
-                <span className="regular-fw">I am proficient</span> in HTML,
-                CSS, Flexbox, CSS Grids, media queries, and custom CSS & SVG
-                animations.
+                I am proficient in HTML, CSS, Flexbox, CSS Grids, media queries,
+                and custom CSS & SVG animations.
               </ColumnText>
               <ColumnText style={{ marginBottom: "75px" }}>
-                <span className="regular-fw">I am familiar</span> with
-                WordPress, JavaScript, jQuery, React, Gatsby, and GraphQL.
+                I am familiar with WordPress, JavaScript, jQuery, React, Gatsby,
+                and GraphQL.
               </ColumnText>
               <ColumnHeader>Dev Tools</ColumnHeader>
               <List style={{ marginBottom: "30px" }}>

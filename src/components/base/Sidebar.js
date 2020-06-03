@@ -19,8 +19,8 @@ export const Image = styled.img`
 `
 
 const AboutTheAuthorBlurb = styled.p`
-  font-family: "Rubik Light", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   line-height: 1.5;
   margin: 0 auto;
@@ -36,7 +36,10 @@ class Sidebar extends React.Component {
       <div className="sidebar">
         <div className="about-the-author-card">
           <Image src={AvatarBitmoji} alt="Connor Ocampo" />
-          <p className="h4" style={{ marginBottom: " 30px" }}>
+          <p
+            className="h4"
+            style={{ fontWeight: "800", marginBottom: " 30px" }}
+          >
             About the Author
           </p>
           <AboutTheAuthorBlurb>

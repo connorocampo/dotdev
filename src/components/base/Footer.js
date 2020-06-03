@@ -5,16 +5,13 @@ import "../../assets/styles/footer.css"
 
 // Images
 import email from "../../assets/images/icons/email.svg"
-import github from "../../assets/images/icons/github.svg"
-import codepen from "../../assets/images/icons/codepen.svg"
-import linkedin from "../../assets/images/icons/linkedin.svg"
 
 /*
  * Styles
  */
 
 export const Container = styled.div`
-  background: #f7f8fa;
+  background: #f4f4f4;
 `
 
 export const CTA = styled.div`
@@ -31,14 +28,17 @@ export const Copyright = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  font-family: "Rubik Light", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   margin: 0 auto;
   margin-top: -50px;
   max-width: 1200px;
   padding: 0 1em;
   padding-bottom: 50px;
+  @media screen and (max-width: 735px) {
+    flex-direction: column;
+  }
 `
 
 /*
@@ -50,11 +50,14 @@ class Footer extends React.Component {
     return (
       <Container>
         <CTA className="is-black-bg is-white cta-container">
-          <p className="is-medium-header footer-padding-left footer-header-mobile">
+          <h2
+            style={{ fontSize: "36px" }}
+            className="footer-padding-left footer-header-mobile"
+          >
             Contact Connor
-          </p>
+          </h2>
           <p
-            className="is-body-text footer-text-mobile"
+            className="footer-text-mobile"
             style={{ textAlign: "center", width: "282px" }}
           >
             Contact via carrier pigeon is preferred, though an email will
@@ -78,7 +81,7 @@ class Footer extends React.Component {
             </div>
           </span>
         </CTA>
-        <Copyright className="copyright-desktop-hide">
+        <Copyright>
           <p>Made with {"<3"} by me.</p>
           <span
             className="social-media-mobile"
@@ -89,59 +92,32 @@ class Footer extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={github} alt="github icon" />
+              <i class="fab fa-github footer-icons is-black"></i>
             </a>
             <a
               href="https://codepen.io/connorocampo"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                src={codepen}
-                alt="codepen icon"
-                style={{ margin: "0 25px" }}
-              />
+              <i class="fab fa-codepen footer-icons is-black"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/connorocampo/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={linkedin} alt="linkedin icon" />
+              <i class="fab fa-linkedin footer-icons is-black"></i>
+            </a>
+            <a
+              href="https://twitter.com/connorocampo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-twitter footer-icons is-black"></i>
             </a>
           </span>
           <p>© 2020.</p>
         </Copyright>
-        <div className="copyright-container-mobile">
-          <span className="copyright-social-media-icons-mobile">
-            <a
-              href="https://github.com/connorocampo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={github} alt="github icon" />
-            </a>
-            <a
-              href="https://codepen.io/connorocampo"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={codepen}
-                alt="codepen icon"
-                style={{ margin: "0 25px" }}
-              />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/connorocampo/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src={linkedin} alt="linkedin icon" />
-            </a>
-          </span>
-          <p className="copyright-mobile">Made with {"<3"} by me. © 2020.</p>
-        </div>
       </Container>
     )
   }

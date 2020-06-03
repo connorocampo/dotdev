@@ -14,7 +14,8 @@ import PostList from "../components/PostList"
 import Footer from "../components/base/Footer"
 
 const Heading = styled.div`
-  font-family: "Rubik Bold";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: ${(props) => props.theme.size.header};
   margin: 100px 0 50px 0;
   text-transform: uppercase;
