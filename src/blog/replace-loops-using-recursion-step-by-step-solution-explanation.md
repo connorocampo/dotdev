@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: "# Replace Loops using Recursion (Line-by-line Solution Explanation)"
+title: Replace Loops using Recursion (Line-by-line Solution Explanation)
 date: 2020-06-03T04:32:03.073Z
 ---
 This is a line-by-line code explanation of [freeCodeCamp’s Replace Loops using Recursion module](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/replace-loops-using-recursion) in their Basic JavaScript section.
