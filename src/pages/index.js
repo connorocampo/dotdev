@@ -44,7 +44,7 @@ export default ({ data }) => (
           crossorigin="anonymous"
         ></script>
 
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        {/* <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> */}
       </Helmet>
       <Header />
       <Hero />
