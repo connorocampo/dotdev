@@ -92,28 +92,28 @@ class Footer extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-github footer-icons is-black"></i>
+              <i class="fab fa-github footer-icons"></i>
             </a>
             <a
               href="https://codepen.io/connorocampo"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-codepen footer-icons is-black"></i>
+              <i class="fab fa-codepen footer-icons"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/connorocampo/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-linkedin footer-icons is-black"></i>
+              <i class="fab fa-linkedin footer-icons"></i>
             </a>
             <a
               href="https://twitter.com/connorocampo"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-twitter footer-icons is-black"></i>
+              <i class="fab fa-twitter footer-icons"></i>
             </a>
           </span>
           <p>© 2020.</p>

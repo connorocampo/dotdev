@@ -77,6 +77,11 @@
 
 .footer-icons {
   font-size: 40px;
+  margin: 0 0.25em;
+}
+
+i {
+  color: #0f0d16;
 }
 
 /* Responsive */
