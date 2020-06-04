@@ -13,9 +13,10 @@ This is a line-by-line code explanation of <a
 
 As of today, Wednesday June 3rd, 2020, this is what the code challenge looks like:
 
-```javascript
+```
 function sum(arr, n) {
   // Only change code below this line
+
   // Only change code above this line
 }
 ```

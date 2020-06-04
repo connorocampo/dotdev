@@ -20,12 +20,18 @@ pre {
   overflow: hidden;
 }
 
+@media (max-width: 1200px) {
+  pre {
+    width: 90vw;
+  }
+}
+
 pre code {
   scrollbar-color: #666;
   scrollbar-width: 0.5em;
   background: 0 0;
   padding: 15px 20px 12px 22px;
-  white-space: pre-wrap;
+  /* white-space: pre-wrap; */
   -webkit-overflow-scrolling: touch;
   display: block;
   overflow-x: scroll;
