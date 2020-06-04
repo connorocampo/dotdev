@@ -1,5 +1,10 @@
 /* CODE */
 
+code span {
+  font-size: 18px;
+  font-family: monospace;
+}
+
 /* pre {
   background: #0f0d16;
   border-radius: 8px;
@@ -21,11 +26,11 @@
 } */
 
 @media (max-width: 1200px) {
-  /* pre {
+  pre {
     width: 90vw;
   }
 }
-
+/*
 pre code {
   scrollbar-color: #666;
   scrollbar-width: 0.5em;
@@ -38,7 +43,6 @@ pre code {
   min-width: 100px;
   font-size: 18px;
   line-height: 1.75;*/
-}
 
 /* ANCHOR STYLES */
 
