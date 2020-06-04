@@ -1,27 +1,27 @@
-import React from "react"
-import { Helmet } from "react-helmet"
-import { ThemeProvider } from "styled-components"
-import { graphql } from "gatsby"
+import React from "react";
+import { Helmet } from "react-helmet";
+import { ThemeProvider } from "styled-components";
+import { graphql } from "gatsby";
 
-import themeSettings from "../components/base/settings"
+import themeSettings from "../components/base/settings";
 
 // Stylesheets
 
-import "../assets/styles/main.css"
-import "../assets/styles/header.css"
-import "../assets/styles/footer.css"
-import "../assets/styles/markdown.css"
+import "../assets/styles/main.css";
+import "../assets/styles/header.css";
+import "../assets/styles/footer.css";
+import "../assets/styles/markdown.css";
 
 // Components
 
-import favicon from "../../static/favicon.ico"
-import Layout from "../components/base/Layout"
-import Header from "../components/base/Header"
-import Hero from "../components/home/Hero"
-import About from "../components/home/About"
-import Skills from "../components/home/Skills"
-import RecentWork from "../components/home/RecentWork"
-import Footer from "../components/base/Footer"
+import favicon from "../../static/favicon.ico";
+import Layout from "../components/base/Layout";
+import Header from "../components/base/Header";
+import Hero from "../components/home/Hero";
+import About from "../components/home/About";
+import Skills from "../components/home/Skills";
+import RecentWork from "../components/home/RecentWork";
+import Footer from "../components/base/Footer";
 
 export default ({ data }) => (
   <ThemeProvider theme={themeSettings}>
@@ -44,8 +44,6 @@ export default ({ data }) => (
           src="https://kit.fontawesome.com/2641fe0f3e.js"
           crossorigin="anonymous"
         ></script>
-
-        {/* <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> */}
       </Helmet>
       <Header />
       <Hero />
@@ -55,7 +53,7 @@ export default ({ data }) => (
       <Footer />
     </Layout>
   </ThemeProvider>
-)
+);
 
 export const query = graphql`
   query {
@@ -65,4 +63,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

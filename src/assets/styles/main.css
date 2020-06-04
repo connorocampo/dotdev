@@ -37,8 +37,7 @@ h3 {
   font-size: 36px;
 }
 
-h4,
-.h4 {
+h4 {
   font-size: 24px;
 }
 
@@ -320,6 +319,7 @@ span {
 }
 
 .blog-list-read-more {
+  font-size: 24px;
   display: inline-block;
   margin-bottom: 50px;
 }
@@ -398,10 +398,6 @@ span {
     padding: 0;
     width: auto;
   }
-
-  /* .book-text {
-    margin-bottom: 175px !important;
-  } */
 
   .featured-image,
   .blog-image-mobile {

@@ -1,16 +1,16 @@
-import React from "react"
-import { Link } from "gatsby"
-import { graphql } from "gatsby"
-import styled from "styled-components"
+import React from "react";
+import { Link } from "gatsby";
+import { graphql } from "gatsby";
+import styled from "styled-components";
 
 const PostTitle = styled.div`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: ${(props) => props.theme.size.medium};
-`
+`;
 
 const PostsListCard = ({ timeToRead, frontmatter, fields, excerpt }) => {
-  const title = frontmatter.title || fields.slug
+  const title = frontmatter.title || fields.slug;
 
   return (
     <div>
@@ -27,17 +27,17 @@ const PostsListCard = ({ timeToRead, frontmatter, fields, excerpt }) => {
         />
         <Link
           to={`/${fields.slug}/`}
-          className="is-gradient h4 blog-list-read-more"
+          className="is-gradient blog-list-read-more"
         >
           Read More &rarr;
         </Link>
       </div>
       <hr style={{ border: "1px solid #eeeeee" }} />
     </div>
-  )
-}
+  );
+};
 
-export default PostsListCard
+export default PostsListCard;
 
 export const query = graphql`
   query {
@@ -59,4 +59,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;
