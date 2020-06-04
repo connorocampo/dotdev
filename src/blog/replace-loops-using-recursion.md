@@ -60,13 +60,16 @@ var n = 3;
 Now, let's plug this information into our recursive case.
 
 ```js
-return sum(arr, n - 1) + arr[n - 1];
+else {
+    return sum(arr, n - 1) + arr[n - 1];
+  }
 ```
 
 Since variable n is not equal to 3, we'll plug it into the recursive case and keep solving until we hit our base case.
 
 ```js
 // Factor in n = 3 to solve
+
 sum(arr, 3 - 1) + arr[3 - 1];
 sum(arr, 2) + arr[2];
 sum(arr, 2) + 3;
@@ -78,6 +81,7 @@ Moving on...
 
 ```js
 // Factor in n = 2 to solve
+
 sum(arr, 2 - 1) + arr[2 - 1];
 sum(arr, 1) + arr[1];
 sum(arr, 1) + 2;
@@ -86,15 +90,28 @@ sum(arr, 1) + 2;
 Now, our new value of n = 1 from solving our second recursive statement. Also, note that arr[1] equals 2 because the value 3 is at index position 1 of our array.
 
 ```js
-// Now, n = 1, so we need to plug that into our recursive case
+// Now, factor n = 1 to solve
+
 sum(arr, 1 - 1) + arr[1 - 1];
 sum(arr, 0) + arr[0];
 sum(arr, 0) + 1;
 ```
 
-Now, our new value of n = 0 from solving our third recursive statement. Also, note that arr[0] equals 1 because the value 3 is at index position 0 of our array.
+In the last line you'll see that we hit our base case!
 
-If you refer back to our original function to see that sum(arr, 0) is our base case, which evaluates to 0! So, the last statement of the previous code block can be written like this...
+```js
+if (n <= 0) {
+  return 0;
+}
+```
+
+So, because our variable n is now equal to 0, we can return the value 0.
+
+Also, note that arr[0] equals 1 because the value 3 is at index position 0 of our array.
+
+## Now, We Can Solve the Example
+
+So, the last statement of the previous code block can be evaluated like this...
 
 ```js
 0 + 1 = 1;
@@ -106,4 +123,4 @@ From here we can add up all the numbers from each time we solved for n.
 3 + 2 + 1 = 6;
 ```
 
-Make sense? I hope so. But just in case it's not 100% clear, here's a sort of flow chart of how we solved the about example.
+I hope that makes sense! But just in case it's not 100% clear, I'll be adding flow chart of how we solved the above example.
