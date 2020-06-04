@@ -56,28 +56,57 @@ In this example we’ll create an array call are with values 1 through 5. We'll 
 ```
 var arr = [1, 2, 3, 4, 5];
 var n = 3;
+```
 
-// Our recursive case
-return sum(arr, n - 1) + arr[n - 1]
+Now, let's plug this information into our recursive case.
 
-// Factor in n to solve
+```
+return sum(arr, n - 1) + arr[n - 1];
+```
+
+Since variable n is not equal to 3, we'll plug it into the recursive case and keep solving until we hit our base case.
+
+```
+// Factor in n = 3 to solve
 sum(arr, 3 - 1) + arr[3 - 1]
 sum(arr, 2) + arr[2]
 sum(arr, 2) + 3
+```
 
-// Now, n = 2, so we need to plug that into our recursive case
+Now, our new value of n = 2 from solving our first recursive statement. Also, note that arr[2] equals 3 because the value 3 is at index position 2 of our array.
+
+Moving on...
+
+```
+// Factor in n = 2 to solve
 sum(arr, 2 - 1) + arr[2 - 1]
 sum(arr, 1) + arr[1]
 sum(arr, 1) + 2
+```
 
+Now, our new value of n = 1 from solving our second recursive statement. Also, note that arr[1] equals 2 because the value 3 is at index position 1 of our array.
+
+```
 // Now, n = 1, so we need to plug that into our recursive case
 sum(arr, 1 - 1) + arr[1 - 1]
 sum(arr, 0) + arr[0]
 sum(arr, 0) + 1
-
-// Refer back to our original function to see that sum(arr, 0) is our base case, which evaluates to 0!
-0 + 1 = 1
-
-// From here we can add up all the numbers from each time we solved for n.
-3 + 2 + 1 = 6
 ```
+
+Now, our new value of n = 0 from solving our third recursive statement. Also, note that arr[0] equals 1 because the value 3 is at index position 0 of our array.
+
+If you refer back to our original function to see that sum(arr, 0) is our base case, which evaluates to 0! So, the last statement of the previous code block can be written like this...
+
+```
+
+0 + 1 = 1
+```
+
+From here we can add up all the numbers from each time we solved for n.
+
+```
+3 + 2 + 1 = 6
+
+```
+
+Make sense? I hope so. But just in case it's not 100% clear, here's a sort of flow chart of how we solved the about example.
