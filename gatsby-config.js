@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   pathPrefix: "/",
   siteMetadata: {
@@ -29,7 +31,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-styled-components`,
     },
-    `gatsby-transformer-remark`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
@@ -55,7 +56,23 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-vscode`,
+            options: {
+              colorTheme: "Quiet Light",
+              injectStyles: true,
+              extensions: [],
+              extensionDataDirectory: path.resolve("extensions"),
+              logLevel: "error",
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

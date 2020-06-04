@@ -13,10 +13,9 @@ This is a line-by-line code explanation of <a
 
 As of today, Wednesday June 3rd, 2020, this is what the code challenge looks like:
 
-```
+```js
 function sum(arr, n) {
   // Only change code below this line
-
   // Only change code above this line
 }
 ```
@@ -35,12 +34,12 @@ The keyword he used to explain recursion that clicked for me was that the recurs
 
 So, the way I understand recursive functions is that a recursive statement will be executed until it meets the base case. Then, since all previous statements were solved, the function can return a value.
 
-```
+```js
 function sum(arr, n) {
   if (n <= 0) {
-    return 0;
+    return 0
   } else {
-    return sum(arr, n - 1) + arr[n - 1];
+    return sum(arr, n - 1) + arr[n - 1]
   }
 }
 ```
@@ -53,20 +52,20 @@ In order to understand this solution better, I had to figure out the correct way
 
 In this example we’ll create an array call are with values 1 through 5. We'll also create and initialize a variable n to equal 3.
 
-```
-var arr = [1, 2, 3, 4, 5];
-var n = 3;
+```js
+var arr = [1, 2, 3, 4, 5]
+var n = 3
 ```
 
 Now, let's plug this information into our recursive case.
 
-```
-return sum(arr, n - 1) + arr[n - 1];
+```js
+return sum(arr, n - 1) + arr[n - 1]
 ```
 
 Since variable n is not equal to 3, we'll plug it into the recursive case and keep solving until we hit our base case.
 
-```
+```js
 // Factor in n = 3 to solve
 sum(arr, 3 - 1) + arr[3 - 1]
 sum(arr, 2) + arr[2]
@@ -77,7 +76,7 @@ Now, our new value of n = 2 from solving our first recursive statement. Also, no
 
 Moving on...
 
-```
+```js
 // Factor in n = 2 to solve
 sum(arr, 2 - 1) + arr[2 - 1]
 sum(arr, 1) + arr[1]
@@ -86,7 +85,7 @@ sum(arr, 1) + 2
 
 Now, our new value of n = 1 from solving our second recursive statement. Also, note that arr[1] equals 2 because the value 3 is at index position 1 of our array.
 
-```
+```js
 // Now, n = 1, so we need to plug that into our recursive case
 sum(arr, 1 - 1) + arr[1 - 1]
 sum(arr, 0) + arr[0]
@@ -97,16 +96,14 @@ Now, our new value of n = 0 from solving our third recursive statement. Also, no
 
 If you refer back to our original function to see that sum(arr, 0) is our base case, which evaluates to 0! So, the last statement of the previous code block can be written like this...
 
-```
-
+```js
 0 + 1 = 1
 ```
 
 From here we can add up all the numbers from each time we solved for n.
 
-```
+```js
 3 + 2 + 1 = 6
-
 ```
 
 Make sense? I hope so. But just in case it's not 100% clear, here's a sort of flow chart of how we solved the about example.

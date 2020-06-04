@@ -1,6 +1,6 @@
 /* CODE */
 
-pre {
+/* pre {
   background: #0f0d16;
   border-radius: 8px;
   color: #fff;
@@ -18,10 +18,10 @@ pre {
   min-width: 100px;
   max-width: 100%;
   overflow: hidden;
-}
+} */
 
 @media (max-width: 1200px) {
-  pre {
+  /* pre {
     width: 90vw;
   }
 }
@@ -37,17 +37,12 @@ pre code {
   max-width: 100%;
   min-width: 100px;
   font-size: 18px;
-  line-height: 1.75;
+  line-height: 1.75;*/
 }
 
 /* ANCHOR STYLES */
 
 .article p a {
-  /* background: linear-gradient(90deg, #ff8a00, #e52e71);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  word-break: break-word; */
   border-bottom: 1px solid #ff8a00;
   color: #0f0d16;
 }
