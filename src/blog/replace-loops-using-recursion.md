@@ -126,7 +126,7 @@ So, the last statement of the previous code block can be evaluated like this...
 From here we can add up all the numbers from each time we solved for n.
 
 ```js
-3 + 2 + 1 = 6;
+0 + 1 + 2 + 3 = 6;
 ```
 
 I hope that makes sense!
