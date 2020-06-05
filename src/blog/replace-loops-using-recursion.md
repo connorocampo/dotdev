@@ -109,7 +109,7 @@ So, because our variable n is now equal to 0, we can return the value 0.
 
 Also, note that arr[0] equals 1 because the value 3 is at index position 0 of our array.
 
-## Now, We Can Solve the Example
+### Now, We Can Solve the Example
 
 So, the last statement of the previous code block can be evaluated like this...
 
@@ -123,4 +123,18 @@ From here we can add up all the numbers from each time we solved for n.
 3 + 2 + 1 = 6;
 ```
 
-I hope that makes sense! But just in case it's not 100% clear, I'll be adding flow chart of how we solved the above example.
+I hope that makes sense!
+
+## Image Example of Recursion
+
+In case the above code blocks still have you wondering, here's a flow chart of how we solved the above example.
+
+![Recursive Image 1](../assets/images/recursive1.png)
+
+Now, we can add up each value that we got from each recursive call to get our answer: 6!
+
+![Recursive Image 2](../assets/images/recursive2.png)
+
+Hey look, you made it to the end! 🎉
+
+I really hope this post helped you understand this freeCodeCamp challenge. To really drive the concept home, I suggest typing it out a few times with different array and variable values in CodePen. Or even better, on paper!

@@ -1,4 +1,5 @@
-const path = require("path")
+const path = require("path");
+const { createFilePath } = require(`gatsby-source-filesystem`);
 
 module.exports = {
   pathPrefix: "/",
@@ -22,6 +23,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-168382175-1`,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
@@ -29,37 +36,27 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-styled-components`,
-    },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        trackingId: `UA-168382175-1`,
+        path: `${__dirname}/src/blog`,
       },
     },
     {
-      resolve: "gatsby-plugin-categories",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        templatePath: `${__dirname}/src/templates/category.js`,
+        path: `${__dirname}/src/assets/images`,
       },
     },
-    {
-      resolve: `gatsby-plugin-sharp`,
-      options: {
-        useMozJpeg: false,
-        stripMetadata: true,
-        defaultQuality: 75,
-      },
-    },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
           {
             resolve: `gatsby-remark-vscode`,
             options: {
@@ -73,17 +70,20 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-netlify-cms`,
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/blog/`,
-      },
+      resolve: `gatsby-plugin-styled-components`,
     },
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
+
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-plugin-categories",
       options: {
-        path: `${__dirname}/src/assets/images`,
+        templatePath: `${__dirname}/src/templates/category.js`,
       },
     },
   ],
-}
+};
