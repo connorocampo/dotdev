@@ -70,3 +70,6 @@ yarn-error.log
 
 # Blog post
 .hide-post
+
+#Hide file
+.hide

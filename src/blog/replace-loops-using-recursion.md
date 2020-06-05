@@ -20,7 +20,9 @@ function sum(arr, n) {
 }
 ```
 
-After reading through the directions, I still had trouble solving the problem in code so I used the ‘Get Help’ button to Watch a Video (it’s actually an article on explaining recursion) and look at the Get a Hint page for a better understanding. Still, after spending around 2 hours going between reading the article and looking over the solution, I couldn’t quite figure out the whole recursion concept.
+After reading through the directions, I still had trouble solving the problem in code so I used the ‘Get Help’ button to Watch a Video (it’s actually an article on explaining recursion) and look at the Get a Hint page for a better understanding.
+
+Still, after spending around 2 hours going between reading the article and looking over the solution, I couldn’t quite figure out the whole recursion concept.
 
 So, I searched YouTube in hopes that someone could explain it in a way that clicked for me. That’s when I found Colt Steele’s video: <a
               href="https://www.youtube.com/watch?v=lMBVwYrmFZQ"
@@ -30,9 +32,9 @@ So, I searched YouTube in hopes that someone could explain it in a way that clic
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lMBVwYrmFZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-embed"></iframe>
 
-The keyword he used to explain recursion that clicked for me was that the recursive case is basically _waiting in line_ to be solved before the function could return a value.
+The key words he used to explain recursion that clicked for me was that the recursive case is basically _waiting in line_ to be solved before the function could return a value.
 
-So, the way I understand recursive functions is that a recursive statement will be executed until it meets the base case. Then, since all previous statements were solved, the function can return a value.
+So, the way I understand recursive functions is that a recursive call will be executed until it meets the base case. Then, since all previous calls were solved, the function can return a value.
 
 ```js
 function sum(arr, n) {
@@ -46,11 +48,11 @@ function sum(arr, n) {
 
 The above code is the solution.
 
-In order to understand this solution better, I had to figure out the correct way to write out the recursive statement. Building a solid JavaScript foundation in important to me, so I'm making it a point to not move on until I truly understand how every line of code works.
+In order to understand this solution better, I had to figure out the correct way to write out the recursive call. Building a solid JavaScript foundation in important to me, so I'm making it a point to not move on until I truly understand how every line of code works.
 
 ## Recursive Case Written Out Line-by-Line
 
-In this example we’ll create an array call are with values 1 through 5. We'll also create and initialize a variable n to equal 3.
+In this example we’ll create an array called arr with values 1 through 5. We'll also create and initialize a variable n to equal 3.
 
 ```js
 var arr = [1, 2, 3, 4, 5];
@@ -60,6 +62,8 @@ var n = 3;
 Now, let's plug this information into our recursive case.
 
 ```js
+// Recursive case
+
 else {
     return sum(arr, n - 1) + arr[n - 1];
   }
@@ -87,7 +91,7 @@ sum(arr, 1) + arr[1];
 sum(arr, 1) + 2;
 ```
 
-Now, our new value of n = 1 from solving our second recursive statement. Also, note that arr[1] equals 2 because the value 3 is at index position 1 of our array.
+Now, our new value of n = 1 from solving our second recursive statement. Also, note that arr[1] equals 2 because the value 2 is at index position 1 of our array.
 
 ```js
 // Now, factor n = 1 to solve
@@ -100,6 +104,8 @@ sum(arr, 0) + 1;
 In the last line you'll see that we hit our base case!
 
 ```js
+// Base case
+
 if (n <= 0) {
   return 0;
 }
@@ -107,7 +113,7 @@ if (n <= 0) {
 
 So, because our variable n is now equal to 0, we can return the value 0.
 
-Also, note that arr[0] equals 1 because the value 3 is at index position 0 of our array.
+Also, note that arr[0] equals 1 because the value 1 is at index position 0 of our array.
 
 ### Now, We Can Solve the Example
 
@@ -125,7 +131,7 @@ From here we can add up all the numbers from each time we solved for n.
 
 I hope that makes sense!
 
-## Image Example of Recursion
+## Recursion Flowchart
 
 In case the above code blocks still have you wondering, here's a flow chart of how we solved the above example.
 
