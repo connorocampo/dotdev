@@ -73,7 +73,7 @@ export default class BlogList extends React.Component {
           <Header />
           <div className="blog-container">
             <div className="articles">
-              <Heading>Articles</Heading>
+              <Heading>Tech Thoughts</Heading>
               <PostCount>{data.allMarkdownRemark.totalCount} Posts</PostCount>
 
               {data.allMarkdownRemark.edges.map(({ node }) => (
