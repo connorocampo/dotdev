@@ -1,35 +1,34 @@
-import React from "react"
-import styled from "styled-components"
-import { ThemeProvider } from "styled-components"
-import themeSettings from "../../components/base/settings"
+import React from "react";
+import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
+import themeSettings from "../../components/base/settings";
 
 // Imports
 
-// import AvatarBitmoji from "../../assets/images/AvatarBitmoji.png"
-import "../../assets/styles/main.css"
+import "../../assets/styles/main.css";
 
 /*
  * Styles
  */
 
 export const Container = styled.div`
-  // background: pink;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: calc(97vh - 100px);
   padding: 0 1em;
-`
+  @media screen and (max-width: 735px) {
+    margin-top: 10px;
+  }
+`;
 
-// export const Image = styled.img`
-//   border-radius: 50%;
-//   border: 5px solid #0f0d16;
-//   height: 200px;
-//   margin-top: -100px;
-//   margin-bottom: 30px;
-//   width: 200px;
-// `
+export const BioContent = styled.div`
+  margin-top: -100px;
+  @media screen and (max-width: 735px) {
+    margin-top: 0px;
+  }
+`;
 
 export const Tagline = styled.h1`
   color: #0f0d16;
@@ -39,12 +38,11 @@ export const Tagline = styled.h1`
   @media screen and (max-width: 735px) {
     font-size: 42px;
   }
-`
+`;
 
 export const Blurb = styled.span`
-  // font-size: 36px;
   font-size: 18px;
-`
+`;
 
 /*
  * Component
@@ -55,19 +53,14 @@ class Hero extends React.Component {
     return (
       <ThemeProvider theme={themeSettings}>
         <Container className="bio-container">
-          {/* <Image
-            src={AvatarBitmoji}
-            alt="Connor Ocampo"
-            className="bio-thumbnail"
-          /> */}
-          <div style={{ marginTop: "-100px" }}>
+          <BioContent>
             <Blurb>Front-end Developer</Blurb>
             <Tagline>Connor Ocampo</Tagline>
-          </div>
+          </BioContent>
         </Container>
       </ThemeProvider>
-    )
+    );
   }
 }
 
-export default Hero
+export default Hero;

@@ -546,8 +546,8 @@ span {
 
 @media screen and (max-width: 735px) and (orientation: portrait) {
   .bio-container {
-    height: 500px !important;
     height: 600px !important;
+    height: 100px !important;
   }
 
   .work-image-mobile {
