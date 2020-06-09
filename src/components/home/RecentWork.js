@@ -1,13 +1,13 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 // Media
-import ProjectDashboard from "../../assets/images/ProjectDashboard.png"
-import ProjectMiddle from "../../assets/images/ProjectMiddle.png"
-import ProjectJS from "../../assets/images/ProjectJS.png"
-import ProjectToDo from "../../assets/images/ProjectToDo.png"
-import ProjectDroneWorld from "../../assets/images/ProjectDroneWorld.png"
-import ProjectCharmCity from "../../assets/images/ProjectCharmCity.png"
+import ProjectWPBinge from "../../assets/images/ProjectWPBinge.png";
+import ProjectDashboard from "../../assets/images/ProjectDashboard.png";
+import ProjectJS from "../../assets/images/ProjectJS.png";
+import ProjectToDo from "../../assets/images/ProjectToDo.png";
+import ProjectDroneWorld from "../../assets/images/ProjectDroneWorld.png";
+import ProjectCharmCity from "../../assets/images/ProjectCharmCity.png";
 
 /*
  * Styles
@@ -20,7 +20,7 @@ export const Container = styled.div`
   justify-content: center;
   margin-bottom: 100px;
   padding: 0 1em;
-`
+`;
 
 export const RecentWorkText = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -28,14 +28,14 @@ export const RecentWorkText = styled.p`
   font-size: 36px;
   margin-bottom: 50px;
   text-align: center;
-`
+`;
 
 export const ImageContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 50px;
   max-width: 1250px;
-`
+`;
 
 export const Image = styled.img`
   border-radius: 15px;
@@ -43,7 +43,7 @@ export const Image = styled.img`
   height: 200px;
   margin: 1em;
   width: 375px;
-`
+`;
 
 /*
  * Component
@@ -61,6 +61,25 @@ class RecentWork extends React.Component {
         </RecentWorkText>
         <ImageContainer className="work-image-container">
           <a
+            href="https://wpbinge.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="overlay-container">
+              <Image
+                src={ProjectWPBinge}
+                alt="Custom WordPress theme"
+                className="image-hover work-image-mobile project-image"
+              />
+              <div className="overlay">
+                <p className="overlay-text">
+                  Custom WordPress theme and personal blog.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
             href="https://connorocampo.github.io/lorem-dashboard/"
             target="_blank"
             rel="noopener noreferrer"
@@ -75,23 +94,6 @@ class RecentWork extends React.Component {
                 <p className="overlay-text">
                   A pure HTML & CSS responsive dashboard with lorem text.
                 </p>
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="https://sign-in-app.netlify.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="overlay-container">
-              <Image
-                src={ProjectMiddle}
-                alt="Medium.com themed sign in app."
-                className="image-hover work-image-mobile project-image"
-              />
-              <div className="overlay">
-                <p className="overlay-text">Medium.com themed sign in app.</p>
               </div>
             </div>
           </a>
@@ -338,8 +340,8 @@ class RecentWork extends React.Component {
           </div>
         </span> */}
       </Container>
-    )
+    );
   }
 }
 
-export default RecentWork
+export default RecentWork;
