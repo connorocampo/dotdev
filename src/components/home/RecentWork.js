@@ -200,7 +200,7 @@ class RecentWork extends React.Component {
               rel="noopener noreferrer"
             >
               <i
-                class="fab fa-github is-black"
+                className="fab fa-github is-black"
                 style={{
                   marginRight: "10px",
                 }}

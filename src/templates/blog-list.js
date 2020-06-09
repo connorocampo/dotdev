@@ -18,13 +18,15 @@ import Footer from "../components/base/Footer";
 const Heading = styled.h1`
   font-weight: 800;
   margin-bottom: 15px;
-  text-transform: uppercase;
 `;
 
 const PostCount = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin-bottom: 75px;
+  @media screen and (max-width: 1196px) {
+    margin-bottom: 5px;
+  }
 `;
 
 const PostTitle = styled.h3`

@@ -1,10 +1,10 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
-import "../../assets/styles/footer.css"
+import "../../assets/styles/footer.css";
 
 // Images
-import email from "../../assets/images/icons/email.svg"
+import email from "../../assets/images/icons/email.svg";
 
 /*
  * Styles
@@ -12,7 +12,7 @@ import email from "../../assets/images/icons/email.svg"
 
 export const Container = styled.div`
   background: #f4f4f4;
-`
+`;
 
 export const CTA = styled.div`
   align-items: center;
@@ -22,7 +22,7 @@ export const CTA = styled.div`
   margin: 0 auto;
   max-width: 1200px;
   padding: 60px 0;
-`
+`;
 
 export const Copyright = styled.div`
   align-items: center;
@@ -39,7 +39,7 @@ export const Copyright = styled.div`
   @media screen and (max-width: 735px) {
     flex-direction: column;
   }
-`
+`;
 
 /*
  * Component
@@ -92,35 +92,35 @@ class Footer extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-github footer-icons"></i>
+              <i className="fab fa-github footer-icons"></i>
             </a>
             <a
               href="https://codepen.io/connorocampo"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-codepen footer-icons"></i>
+              <i className="fab fa-codepen footer-icons"></i>
             </a>
             <a
               href="https://www.linkedin.com/in/connorocampo/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-linkedin footer-icons"></i>
+              <i className="fab fa-linkedin footer-icons"></i>
             </a>
             <a
               href="https://twitter.com/connorocampo"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="fab fa-twitter footer-icons"></i>
+              <i className="fab fa-twitter footer-icons"></i>
             </a>
           </span>
           <p>© 2020.</p>
         </Copyright>
       </Container>
-    )
+    );
   }
 }
 
-export default Footer
+export default Footer;
