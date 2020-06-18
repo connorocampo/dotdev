@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 // Media
 import ProjectWPBinge from "../../assets/images/ProjectWPBinge.png";
+import ProjectDotcom from "../../assets/images/ProjectDotcom.png";
 import ProjectDashboard from "../../assets/images/ProjectDashboard.png";
-import ProjectJS from "../../assets/images/ProjectJS.png";
 import ProjectToDo from "../../assets/images/ProjectToDo.png";
 import ProjectDroneWorld from "../../assets/images/ProjectDroneWorld.png";
 import ProjectCharmCity from "../../assets/images/ProjectCharmCity.png";
@@ -73,7 +73,26 @@ class RecentWork extends React.Component {
               />
               <div className="overlay">
                 <p className="overlay-text">
-                  Custom WordPress theme and personal blog.
+                  Custom WordPress theme for a WordPress blog.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://connorocampo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="overlay-container">
+              <Image
+                src={ProjectDotcom}
+                alt="Personal WordPress blog."
+                className="image-hover work-image-mobile project-image"
+              />
+              <div className="overlay">
+                <p className="overlay-text">
+                  Custom WordPress theme for my personal blog.
                 </p>
               </div>
             </div>
@@ -92,26 +111,7 @@ class RecentWork extends React.Component {
               />
               <div className="overlay">
                 <p className="overlay-text">
-                  A pure HTML & CSS responsive dashboard with lorem text.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="https://connorocampo.github.io/responsive-js-menu/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="overlay-container">
-              <Image
-                src={ProjectJS}
-                alt="A responsive menu using plain HTML, CSS, and JavaScript. Designed and coded by Connor Ocampo."
-                className="image-hover work-image-mobile project-image"
-              />
-              <div className="overlay">
-                <p className="overlay-text">
-                  A responsive menu using plain HTML, CSS, and JavaScript.
+                  Pure HTML & CSS responsive dashboard with lorem text.
                 </p>
               </div>
             </div>

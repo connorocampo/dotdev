@@ -376,7 +376,6 @@ span {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    /* test style */
     margin-top: 10px;
     max-width: 1200px;
   }
@@ -440,8 +439,6 @@ span {
     justify-content: center;
     max-width: 1200px;
   }
-
-  /* test style */
 
   .blog-post-container {
     margin-top: 20px;

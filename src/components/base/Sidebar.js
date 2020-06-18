@@ -1,10 +1,11 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 // Media
 
-import BookCover from "../../assets/images/BookCover.jpeg"
-import AvatarBitmoji from "../../assets/images/AvatarBitmoji.png"
+import AvatarBitmoji from "../../assets/images/AvatarBitmoji.png";
+import BookCover from "../../assets/images/BookCover.jpeg";
+// import WPBinge from "../../assets/images/WPBinge.png";
 
 /*
  * Styles
@@ -16,7 +17,7 @@ export const Image = styled.img`
   height: 200px;
   margin-bottom: 50px;
   width: 200px;
-`
+`;
 
 const AboutTheAuthorBlurb = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -24,7 +25,7 @@ const AboutTheAuthorBlurb = styled.p`
   font-size: 20px;
   line-height: 1.5;
   margin: 0 auto;
-`
+`;
 
 /*
  * Component
@@ -70,12 +71,26 @@ class Sidebar extends React.Component {
               width: "300px",
             }}
           >
-            A complete guide for new and aspiring developers
+            Read my thoughts about interviewing as an LGBTQ+ person in tech in
+            the book Your First Year in Code.
           </p>
         </div>
+        {/* / Book */}
+
+        {/* <img
+          src={WPBinge}
+          alt="Your First Year in Code Book"
+          style={{
+            height: "200px",
+            width: "200px",
+            display: "block",
+            margin: "0 auto",
+          }}
+        /> */}
       </div>
-    )
+      // /sidebar
+    );
   }
 }
 
-export default Sidebar
+export default Sidebar;
