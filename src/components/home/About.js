@@ -40,9 +40,12 @@ class About extends React.Component {
           About Me
         </h2>
         <AboutText className="is-white about-text-mobile">
-          I'm a self-taught Front-end Developer who enjoys focusing on the
-          design aspect of development. Professionally, I have a history of work
-          in front-end development and search engine optimization (SEO).
+          I'm a self-taught Front-end Developer based in South Florida where we
+          have two seasons: hot and hotter{" "}
+          <span role="img" aria-label="fire emoji">
+            🔥
+          </span>
+          . Currently, I am learning more about JavaScript, Spanish, and music.
         </AboutText>
       </Section>
     );

@@ -45,8 +45,8 @@ class Sidebar extends React.Component {
           </p>
           <AboutTheAuthorBlurb>
             Hey, I’m Connor Ocampo. I’m a self-taught front-end developer based
-            in Boca Raton, FL. I enjoy long bike rides on the pavement, nice
-            people, and oxford commas.
+            in Boca Raton, FL. I'm currently learning more about JavaScript,
+            Spanish, and music.
           </AboutTheAuthorBlurb>
         </div>
         {/* /.about-the-author-card  */}
