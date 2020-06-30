@@ -19,21 +19,6 @@
   text-decoration: none;
 }
 
-/* .nav-item:after {
-  content: "";
-  display: block;
-  border-bottom: 4px solid #474747;
-  width: 0;
-  position: absolute;
-  left: 0;
-  -webkit-transition: 0.25s ease;
-  transition: 0.25s ease;
-} */
-
-/* .nav-item:hover:after {
-  width: 100%;
-} */
-
 .desktop-contact-btn {
   margin-left: 50px;
 }
@@ -52,15 +37,14 @@
 
 /* Responsive */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .nav-item {
     font-size: 22px;
     margin-left: 0;
   }
 
   .desktop-contact-btn {
-    /* display: none; */
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   .desktop-contact-btn:after {

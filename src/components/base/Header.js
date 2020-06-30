@@ -1,10 +1,10 @@
-import React from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
+import React from "react";
+import styled from "styled-components";
+import { Link } from "gatsby";
 
 // Images
-import logo from "../../assets/images/icons/logo.svg"
-import email from "../../assets/images/icons/email.svg"
+import logo from "../../assets/images/icons/logo.svg";
+import email from "../../assets/images/icons/email.svg";
 
 // Styles
 
@@ -16,11 +16,11 @@ export const Container = styled.div`
   margin: 0 auto;
   padding: 0 1em;
   max-width: 1200px;
-`
+`;
 
 export const NavItems = styled.span`
   font-size: ${(props) => props.theme.size.bodySmall};
-`
+`;
 
 // Component
 
@@ -34,6 +34,13 @@ class Header extends React.Component {
           </Link>
         </span>
         <NavItems className="nav-items navbar-nav">
+          <a
+            href="/images/Connor_Ocampo_Resume.pdf"
+            className="is-black nav-item articles-link-hide"
+            download
+          >
+            Resume
+          </a>
           <Link to="/blog/" className="is-black nav-item articles-link-hide">
             Blog
           </Link>
@@ -55,8 +62,8 @@ class Header extends React.Component {
           </a>
         </NavItems>
       </Container>
-    )
+    );
   }
 }
 
-export default Header
+export default Header;
