@@ -37,6 +37,8 @@ class Header extends React.Component {
           <a
             href="https://connorocampo.com/wp-content/uploads/2020/06/Connor-Ocampo-Resume.pdf"
             className="is-black nav-item articles-link-hide"
+            target="_blank"
+            rel="noreferrer"
             download
           >
             Resume
