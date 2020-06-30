@@ -170,6 +170,7 @@ export const blogListQuery = graphql`
       totalCount
       edges {
         node {
+          id
           fields {
             slug
           }

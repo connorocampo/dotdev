@@ -155,25 +155,6 @@ class RecentWork extends React.Component {
             </div>
           </a>
 
-          {/* <a
-            href="https://connors-mailchimp-app.herokuapp.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="overlay-container">
-              <Image
-                src={ProjectMailchimp}
-                alt="Mailchimp Email Signup app using Mailchimp API."
-                className="image-hover work-image-mobile project-image"
-              />
-              <div className="overlay">
-                <p class="overlay-text">
-                  Mailchimp Email Signup app using Mailchimp API.
-                </p>
-              </div>
-            </div>
-          </a> */}
-
           <a
             href="https://connorocampo.github.io/react-app/"
             target="_blank"
@@ -202,7 +183,7 @@ class RecentWork extends React.Component {
               <i
                 className="fab fa-github is-black"
                 style={{
-                  marginRight: "10px",
+                  marginRight: "5px",
                 }}
               ></i>
 
@@ -210,135 +191,6 @@ class RecentWork extends React.Component {
             </a>
           </div>
         </span>
-        {/* <RecentWorkText>Here are a few recent design projects.</RecentWorkText>
-        <ImageContainer className="work-image-container">
-          <a
-            href="https://connorocampo.github.io/website/static/DesignArticles-46a7f98ca0e8cbe20381c3aa4f5de2d0.svg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="overlay-container">
-              <Image
-                src={DesignArticles}
-                alt="A ficticious web development agency mockup."
-                className="image-hover work-image-mobile project-image"
-              />
-              <div className="overlay">
-                <p class="overlay-text">Article layout for this website :)</p>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://connorocampo.github.io/website/static/DesignOne-3104bd0340aebe581a7401e7a45418db.svg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="overlay-container">
-              <Image
-                src={DesignSAL}
-                alt="A ficticious web development agency mockup."
-                className="image-hover work-image-mobile project-image"
-              />
-              <div className="overlay">
-                <p class="overlay-text">
-                  A ficticious web development agency mockup.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://connorocampo.github.io/website/static/DesignModernizingMedicine-0529420cd91e73468b0d0600925981e4.svg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="overlay-container">
-              <Image
-                src={trial}
-                alt="Standard letter-sized brochure mockup for Modernizing
-                Medicine."
-                className="image-hover work-image-mobile project-image"
-              />
-              <div className="overlay">
-                <p class="overlay-text">
-                  Standard letter-sized brochure mockup for Modernizing
-                  Medicine.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://connorocampo.github.io/website/static/DesignCharles-ce4541de4767562dcac592ce874099f8.svg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="overlay-container">
-              <Image
-                src={DesignCharles}
-                alt="Portfolio website for my brother."
-                className="image-hover work-image-mobile project-image"
-              />
-              <div className="overlay">
-                <p class="overlay-text">Portfolio website for my brother.</p>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://connorocampo.github.io/sibling/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="overlay-container">
-              <Image
-                src={DesignSibling}
-                alt="A design to code project from a Dribbble graphic."
-                className="image-hover work-image-mobile project-image"
-              />
-              <div className="overlay">
-                <p class="overlay-text">
-                  A design to code project from a Dribbble graphic.
-                </p>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://connorocampo.github.io/vans/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="overlay-container">
-              <Image
-                src={DesignVans}
-                alt="A design to code project from a Vans Dribbble graphic."
-                className="image-hover work-image-mobile project-image"
-              />
-              <div className="overlay">
-                <p class="overlay-text">
-                  A design to code project from a Vans Dribbble graphic.
-                </p>
-              </div>
-            </div>
-          </a>
-        </ImageContainer>
-        <span style={{ marginBottom: "200px" }}>
-          <div class="dribbble-border-gradient-outline">
-            <a
-              href="https://dribbble.com/connorocampo"
-              className="gradient-btn dribbble-border-gradient-fill-light gradient-link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={dribbble}
-                alt="dribbble icon"
-                style={{
-                  marginRight: "10px",
-                  height: "28px",
-                }}
-              />
-              <span className="is-gradient">View more in Dribbble</span>
-            </a>
-          </div>
-        </span> */}
       </Container>
     );
   }
