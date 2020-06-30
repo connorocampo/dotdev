@@ -15,10 +15,10 @@ export const Container = styled.div`
 export const Header = styled.h2`
   margin-bottom: 100px;
   text-align: center;
-  @media (max-width: 500px){}
+  @media (max-width: 500px) {
     font-size: 36px;
     padding: 0px;
-}
+  }
 `;
 
 export const Columns = styled.div`
