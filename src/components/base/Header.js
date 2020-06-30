@@ -20,6 +20,9 @@ export const Container = styled.div`
 
 export const NavItems = styled.span`
   font-size: ${(props) => props.theme.size.bodySmall};
+  @media screen and (max-width: 600px) {
+    text-decoration: underline;
+  }
 `;
 
 // Component
@@ -55,6 +58,7 @@ class Header extends React.Component {
             <img
               src={email}
               alt="email icon"
+              class="email-icon"
               style={{
                 marginRight: "10px",
                 marginBottom: "-2px",

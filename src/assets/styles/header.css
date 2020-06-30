@@ -43,8 +43,8 @@
     margin-left: 0;
   }
 
-  .desktop-contact-btn {
-    margin-left: 10px;
+  .email-icon {
+    display: none;
   }
 
   .desktop-contact-btn:after {
