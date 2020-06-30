@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
 /*
  * Styles
@@ -10,8 +10,8 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 1em 300px 1em;
-`
+  padding: 100px 1em;
+`;
 
 export const AboutText = styled.p`
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -20,7 +20,7 @@ export const AboutText = styled.p`
   line-height: 1.5;
   max-width: 1000px;
   text-align: center;
-`
+`;
 
 /*
  * Component
@@ -29,11 +29,10 @@ export const AboutText = styled.p`
 class About extends React.Component {
   render() {
     return (
-      <Section className="is-black-bg" style={{ marginBottom: "100px" }}>
+      <Section className="is-black-bg">
         <h2
           className="is-white about-header-mobile"
           style={{
-            paddingTop: "100px",
             paddingBottom: "50px",
             textAlign: "center",
           }}
@@ -46,8 +45,8 @@ class About extends React.Component {
           in front-end development and search engine optimization (SEO).
         </AboutText>
       </Section>
-    )
+    );
   }
 }
 
-export default About
+export default About;

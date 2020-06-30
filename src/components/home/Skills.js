@@ -1,58 +1,60 @@
-import React from "react"
-import styled from "styled-components"
-import { ThemeProvider } from "styled-components"
-import themeSettings from "../../components/base/settings"
-
-// Images
-import Design from "../../assets/images/icons/design.svg"
-import Dev from "../../assets/images/icons/dev.svg"
-import Marketing from "../../assets/images/icons/marketing.svg"
+import React from "react";
+import styled from "styled-components";
+import { ThemeProvider } from "styled-components";
+import themeSettings from "../../components/base/settings";
 
 /*
  * Styles
  */
 
 export const Container = styled.div`
-  display: flex;
-  justify-content: center;
-`
+  border-bottom: 1px solid #dae1e7;
+  padding: 100px 0;
+`;
+
+export const Header = styled.h2`
+  margin-bottom: 100px;
+  text-align: center;
+  @media (max-width: 500px){}
+    font-size: 36px;
+    padding: 0px;
+}
+`;
 
 export const Columns = styled.div`
-  align-items: center;
   background: #ffffff;
-  border: 1px solid #dae1e7;
-  border-radius: 25px;
   display: flex;
-  margin-top: -300px;
-  margin-bottom: 200px;
-  max-width: 1200px;
-  text-align: center;
-`
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 800px;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+`;
 
-export const Icon = styled.img`
-  padding-bottom: 75px;
-`
-
-export const ColumnHeader = styled.h4`
+export const ColumnHeader = styled.h3`
   margin-bottom: 50px;
-`
-
-export const ColumnText = styled.p`
-  font-size: 24px;
-  max-width: 350px;
-  padding: 0 25px;
-`
+  @media screen and (max-width: 1200px) {
+    font-size: 24px;
+    text-align: center;
+  }
+`;
 
 export const List = styled.ul`
-  padding: 0 25px;
   max-width: 350px;
-`
+`;
 
 export const ListItem = styled.li`
   font-size: 24px;
-  list-style: none;
-  margin: 20px 0;
-`
+  margin: 20px auto;
+  margin-left: 25px;
+  @media screen and (max-width: 1200px) {
+    margin-left: 0;
+    list-style: none;
+    text-align: center;
+  }
+`;
 
 /*
  * Component
@@ -63,78 +65,39 @@ class Skills extends React.Component {
     return (
       <ThemeProvider theme={themeSettings}>
         <Container>
-          <Columns className="has-box-shadow skills-columns">
-            <div className="column column-1">
-              <Icon src={Dev} alt="development icon" />
-              <ColumnHeader>Front-end Development</ColumnHeader>
-              <ColumnText style={{ marginBottom: "30px" }}>
-                I am proficient in HTML, CSS, Flexbox, CSS Grids, media queries,
-                and custom CSS & SVG animations.
-              </ColumnText>
-              <ColumnText style={{ marginBottom: "75px" }}>
-                I am familiar with WordPress, JavaScript, jQuery, React, Gatsby,
-                and GraphQL.
-              </ColumnText>
-              <ColumnHeader>Dev Tools</ColumnHeader>
-              <List style={{ marginBottom: "30px" }}>
+          <Header>Skills & Technology</Header>
+          <Columns className="skills-columns">
+            <div className="column">
+              <ColumnHeader>Code</ColumnHeader>
+              <List>
                 <ListItem>GIT</ListItem>
-                <ListItem>GitHub</ListItem>
+                <ListItem>HTML</ListItem>
+                <ListItem>CSS</ListItem>
+                <ListItem>Flexbox</ListItem>
+                <ListItem>JavaScript</ListItem>
+                <ListItem>React</ListItem>
+                <ListItem>GatsbyJS</ListItem>
+                <ListItem>WordPress/MAMP</ListItem>
+              </List>
+            </div>
+            <div className="column">
+              <ColumnHeader>Dev Tools</ColumnHeader>
+              <List>
                 <ListItem>VS Code</ListItem>
-                <ListItem>Bootstrap</ListItem>
+                <ListItem>GitHub</ListItem>
                 <ListItem>Netlify</ListItem>
-                <ListItem>Heroku</ListItem>
-              </List>
-            </div>
-            <hr className="hr-border" />
-            <div className="column column-2">
-              <Icon src={Marketing} alt="marketing/seo icon" />
-              <ColumnHeader>Marketing/SEO</ColumnHeader>
-              <ColumnText style={{ marginBottom: "30px" }}>
-                Most of my marketing/seo work consists of optimizing articles,
-                and reporting/improving analytics.
-              </ColumnText>
-              <ColumnText style={{ marginBottom: "75px" }}>
-                I also have experience launching and growing organic social
-                media campaigns.
-              </ColumnText>
-              <ColumnHeader>Marketing Tools</ColumnHeader>
-              <List style={{ marginBottom: "30px" }}>
                 <ListItem>Google Analytics</ListItem>
-                <ListItem>Search Console</ListItem>
-                <ListItem>Yoast</ListItem>
-                <ListItem>SEMrush</ListItem>
-                <ListItem>Hootsuite</ListItem>
-                <ListItem>MailChimp</ListItem>
-              </List>
-            </div>
-            <div className="column column-3">
-              <Icon src={Design} alt="design icon" />
-              <ColumnHeader className="video-design-heading">
-                Video/Design
-              </ColumnHeader>
-              <ColumnText style={{ marginBottom: "30px" }}>
-                I enjoy learning, designing, and experimenting with simple,
-                modern, and intuitive design for desktop and mobile devices.
-              </ColumnText>
-              <ColumnText style={{ marginBottom: "75px" }}>
-                I also enjoy learning more about video production software to
-                create impactful films.
-              </ColumnText>
-              <ColumnHeader>Video/Design Tools</ColumnHeader>
-              <List style={{ marginBottom: "30px" }}>
-                <ListItem>DaVinci Resolve</ListItem>
                 <ListItem>Figma</ListItem>
-                <ListItem>Sketch</ListItem>
-                <ListItem>Abstract</ListItem>
                 <ListItem>Photoshop</ListItem>
-                <ListItem>Paper & Pencil</ListItem>
+                <ListItem>Canva</ListItem>
+                <ListItem>Excalidraw</ListItem>
               </List>
             </div>
           </Columns>
         </Container>
       </ThemeProvider>
-    )
+    );
   }
 }
 
-export default Skills
+export default Skills;

@@ -96,12 +96,6 @@ span {
   box-shadow: 8px 8px 8px rgba(128, 128, 128, 0.1);
 }
 
-.column-2 {
-  border-right: 1px solid #dae1e7;
-  border-left: 1px solid #dae1e7;
-  padding: 75px 0;
-}
-
 .video-design-heading {
   margin-top: -8px;
 }
@@ -494,20 +488,12 @@ span {
 /* Responsive */
 
 @media screen and (max-width: 1200px) {
-  .skills-columns {
-    border-radius: 0 !important;
-    box-shadow: none;
-    flex-wrap: wrap;
-    padding: 75px 0;
-  }
-
   .column {
     margin: 0 auto;
   }
 
-  .column-2 {
-    border-right: none;
-    border-left: none;
+  .column:last-child {
+    margin-top: 50px;
   }
 
   /* Recent Work */
