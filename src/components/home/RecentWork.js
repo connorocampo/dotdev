@@ -6,7 +6,7 @@ import ProjectPortfolio from "../../assets/images/ProjectPortfolio.png";
 import ProjectWPBinge from "../../assets/images/ProjectWPBinge.png";
 import ProjectDotcom from "../../assets/images/ProjectDotcom.png";
 import ProjectDashboard from "../../assets/images/ProjectDashboard.png";
-import ProjectToDo from "../../assets/images/ProjectToDo.png";
+import ProjectDarkMode from "../../assets/images/ProjectDarkMode.png";
 import ProjectDroneWorld from "../../assets/images/ProjectDroneWorld.png";
 
 /*
@@ -60,6 +60,25 @@ class RecentWork extends React.Component {
           Here are a few recent front-end development projects.
         </RecentWorkText>
         <ImageContainer className="work-image-container">
+          <a
+            href="https://connorocampo.github.io/dark-mode-example/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="overlay-container">
+              <Image
+                src={ProjectDarkMode}
+                alt="Simple To Do List React App."
+                className="image-hover work-image-mobile project-image"
+              />
+              <div className="overlay">
+                <p className="overlay-text">
+                  Example of Dark Mode Toggle Button using HTML, CSS, and JS.
+                </p>
+              </div>
+            </div>
+          </a>
+
           <a
             href="https://connorocampo.dev/blog/"
             target="_blank"
@@ -152,23 +171,6 @@ class RecentWork extends React.Component {
                 <p className="overlay-text">
                   Landing page site for Drone World Reviews.
                 </p>
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="https://connorocampo.github.io/react-app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="overlay-container">
-              <Image
-                src={ProjectToDo}
-                alt="Simple To Do List React App."
-                className="image-hover work-image-mobile project-image"
-              />
-              <div className="overlay">
-                <p className="overlay-text">Simple To Do List React App.</p>
               </div>
             </div>
           </a>
