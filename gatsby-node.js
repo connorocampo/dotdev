@@ -5,7 +5,7 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions;
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`);
-  // const pagePage = path.resolve(`./src/templates/page-page.js`);
+  const pagePage = path.resolve(`./src/templates/page-page.js`);
 
   return graphql(
     `
@@ -33,6 +33,7 @@ exports.createPages = ({ graphql, actions }) => {
     }
 
     // Create blog post Pages
+
     const posts = result.data.allMarkdownRemark.edges;
 
     posts.forEach((post, index) => {
@@ -52,6 +53,7 @@ exports.createPages = ({ graphql, actions }) => {
     });
 
     // Create blog post list Pages
+
     const postsPerPage = 3;
     const numPages = Math.ceil(posts.length / postsPerPage);
 
@@ -69,6 +71,7 @@ exports.createPages = ({ graphql, actions }) => {
     });
 
     // Create page Page
+
     // const page = result.data.allMarkdownRemark.edges;
 
     // page.forEach((page) => {

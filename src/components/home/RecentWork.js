@@ -2,12 +2,12 @@ import React from "react";
 import styled from "styled-components";
 
 // Media
+import ProjectPortfolio from "../../assets/images/ProjectPortfolio.png";
 import ProjectWPBinge from "../../assets/images/ProjectWPBinge.png";
 import ProjectDotcom from "../../assets/images/ProjectDotcom.png";
 import ProjectDashboard from "../../assets/images/ProjectDashboard.png";
 import ProjectToDo from "../../assets/images/ProjectToDo.png";
 import ProjectDroneWorld from "../../assets/images/ProjectDroneWorld.png";
-import ProjectCharmCity from "../../assets/images/ProjectCharmCity.png";
 
 /*
  * Styles
@@ -60,6 +60,26 @@ class RecentWork extends React.Component {
           Here are a few recent front-end development projects.
         </RecentWorkText>
         <ImageContainer className="work-image-container">
+          <a
+            href="https://connorocampo.dev/blog/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="overlay-container">
+              <Image
+                src={ProjectPortfolio}
+                alt="Front-end Developer Portfolio builts on GatsbyJS."
+                className="image-hover work-image-mobile project-image"
+              />
+              <div className="overlay">
+                <p className="overlay-text">
+                  Developer Portfolio built with GatsbyJS, hosted on Netlify,
+                  using Netlify CMS.
+                </p>
+              </div>
+            </div>
+          </a>
+
           <a
             href="https://wpbinge.com/"
             target="_blank"
@@ -131,25 +151,6 @@ class RecentWork extends React.Component {
               <div className="overlay">
                 <p className="overlay-text">
                   Landing page site for Drone World Reviews.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="https://connorocampo.github.io/flexbox-fun/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="overlay-container">
-              <Image
-                src={ProjectCharmCity}
-                alt="A redesign for Charm City Burger's website."
-                className="image-hover work-image-mobile project-image"
-              />
-              <div className="overlay">
-                <p className="overlay-text">
-                  An "updated" design for Charm City Burger's current website.
                 </p>
               </div>
             </div>
