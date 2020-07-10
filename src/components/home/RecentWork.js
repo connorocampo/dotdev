@@ -54,7 +54,7 @@ class RecentWork extends React.Component {
     return (
       <Container>
         <h2 className="recent-work-header" style={{ marginBottom: "50px" }}>
-          My Recent Work
+          My Recent Projects
         </h2>
         <RecentWorkText className="recent-work-text">
           Here are a few recent front-end development projects.
