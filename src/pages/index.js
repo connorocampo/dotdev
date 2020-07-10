@@ -11,6 +11,7 @@ import "../assets/styles/main.css";
 import "../assets/styles/header.css";
 import "../assets/styles/footer.css";
 import "../assets/styles/markdown.css";
+import "../assets/styles/tabs.css";
 
 // Components
 

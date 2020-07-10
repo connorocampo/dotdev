@@ -1,0 +1,77 @@
+.navigation-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3em auto 0 auto;
+  max-width: 825px;
+}
+
+button {
+  background: #ffffff;
+  border-radius: 0;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+  outline: 1px solid black;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  transition: 500ms;
+  width: 50%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* Create an active/current tablink class */
+.navigation-container button.active {
+  background-color: black;
+  color: white;
+}
+
+.content-page {
+  display: none;
+  height: 300px;
+  margin: 3em auto 0 auto;
+  max-width: 825px;
+  animation: contentAnimation 500ms;
+}
+
+.active-section {
+  display: block;
+}
+
+@keyframes contentAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.content-page h1 {
+  margin-bottom: 0.5em;
+}
+
+ul {
+  margin: 1em 0;
+}
+
+ul li {
+  list-style-position: inside;
+  padding: 5px;
+}
+
+@media (max-width: 627px) {
+  .navigation-container {
+    flex-direction: column;
+  }
+
+  button {
+    display: block;
+    transition: 0s;
+    width: 100%;
+  }
+}
