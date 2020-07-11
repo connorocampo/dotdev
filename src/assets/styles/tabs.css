@@ -32,7 +32,6 @@ button:hover {
 
 .content-page {
   display: none;
-  height: 300px;
   margin: 3em auto 0 auto;
   max-width: 825px;
   animation: contentAnimation 500ms;
@@ -64,6 +63,10 @@ ul li {
   padding: 5px;
 }
 
+.education-text {
+  font-size: 24px;
+}
+
 @media (max-width: 627px) {
   .navigation-container {
     flex-direction: column;
@@ -73,5 +76,9 @@ ul li {
     display: block;
     transition: 0s;
     width: 100%;
+  }
+  .content-page h2 {
+    font-size: 32px;
+    text-align: center;
   }
 }

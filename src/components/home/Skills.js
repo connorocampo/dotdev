@@ -11,8 +11,12 @@ import "../../assets/styles/tabs.css";
 
 export const Container = styled.div`
   border-bottom: 1px solid #dae1e7;
-  height: 850px;
+  height: 950px;
+  margin: 0 1em;
   padding: 100px 0;
+  @media (max-width: 1200px) {
+    height: auto;
+  }
 `;
 
 export const Header = styled.h2`
@@ -55,6 +59,7 @@ export const EducationHeader = styled.h3`
 export const List = styled.ul`
   margin-bottom: 50px;
   max-width: auto;
+  }
 `;
 
 export const ListItem = styled.li`
@@ -64,6 +69,15 @@ export const ListItem = styled.li`
     margin-left: 0;
     list-style: none;
     text-align: center;
+  }
+`;
+
+export const ListItemEducation = styled.li`
+  font-size: 24px;
+  margin: 5px auto;
+  @media screen and (max-width: 1200px) {
+    margin-left: 0;
+    list-style: none;
   }
 `;
 
@@ -152,7 +166,7 @@ class Skills extends React.Component {
           <div id="skills" className="content-page active-section">
             <h2>Skills and Technology</h2>
             <Columns className="skills-columns">
-              <div className="column">
+              <div>
                 <ColumnHeader>Code</ColumnHeader>
                 <List>
                   <ListItem>GIT</ListItem>
@@ -162,12 +176,13 @@ class Skills extends React.Component {
                   <ListItem>JavaScript</ListItem>
                   <ListItem>React</ListItem>
                   <ListItem>GatsbyJS</ListItem>
+                  <ListItem>Gatsby CMS</ListItem>
                   <ListItem>WordPress/MAMP</ListItem>
                 </List>
               </div>
-              <div className="column">
+              <div>
                 <ColumnHeader>Tools</ColumnHeader>
-                <List>
+                <List style={{ marginBottom: "0" }}>
                   <ListItem>VS Code</ListItem>
                   <ListItem>GitHub</ListItem>
                   <ListItem>Netlify</ListItem>
@@ -184,42 +199,44 @@ class Skills extends React.Component {
           <div id="education" className="content-page">
             <h2>Certificates and Education</h2>
             <Columns className="skills-columns">
-              <div className="column">
+              <div>
                 <ColumnHeader>Certificates</ColumnHeader>
                 <List>
-                  <ListItem>
+                  <ListItemEducation>
                     <em>
                       <b>Google Analytics for Beginners</b>
                     </em>
                     , Google
-                  </ListItem>
-                  <ListItem>
+                  </ListItemEducation>
+                  <ListItemEducation>
                     <em>
                       <b>Responsive Web Design</b>
                     </em>
                     , freeCodeCamp
-                  </ListItem>
-                  <ListItem>
+                  </ListItemEducation>
+                  <ListItemEducation>
                     <em>
                       <b>HTML, CSS, and JS Fundamentals</b>
                     </em>
                     , SoloLearn
-                  </ListItem>
-                  <ListItem>
+                  </ListItemEducation>
+                  <ListItemEducation>
                     <em>
                       <b>SEO Fundamentals</b>
                     </em>
                     , SEMrush
-                  </ListItem>
+                  </ListItemEducation>
                 </List>
               </div>
             </Columns>
             <EducationHeader>Education</EducationHeader>
-            <p>
-              In 2016, I earned my Bachelor of Science Degree in Exercise
-              Science from the University of Central Florida. Soon after
-              graduating, I picked up an interest in web development and
-              launched my first site in the same year.
+            <p className="education-text">
+              In 2016, I earned my Bachelor of Science Degree in Sports and
+              Exercise Science from the University of Central Florida. Soon
+              after graduating, I picked up an interest in web development and
+              launched my first site in the same year. Since then, I've went on
+              to gain employment in tech roles and I continue to learn more
+              about web development every day.
             </p>
           </div>
         </Container>
