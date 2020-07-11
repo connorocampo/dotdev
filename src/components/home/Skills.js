@@ -173,6 +173,7 @@ class Skills extends React.Component {
                   <ListItem>HTML</ListItem>
                   <ListItem>CSS</ListItem>
                   <ListItem>Flexbox</ListItem>
+                  <ListItem>CSS Grid</ListItem>
                   <ListItem>JavaScript</ListItem>
                   <ListItem>React</ListItem>
                   <ListItem>GatsbyJS</ListItem>
