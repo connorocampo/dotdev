@@ -176,7 +176,6 @@ class Skills extends React.Component {
                   <ListItem>JavaScript</ListItem>
                   <ListItem>React</ListItem>
                   <ListItem>GatsbyJS</ListItem>
-                  <ListItem>Gatsby CMS</ListItem>
                   <ListItem>WordPress/MAMP</ListItem>
                 </List>
               </div>
@@ -186,6 +185,7 @@ class Skills extends React.Component {
                   <ListItem>VS Code</ListItem>
                   <ListItem>GitHub</ListItem>
                   <ListItem>Netlify</ListItem>
+                  <ListItem>Netlify CMS</ListItem>
                   <ListItem>Google Analytics</ListItem>
                   <ListItem>Figma</ListItem>
                   <ListItem>Photoshop</ListItem>
