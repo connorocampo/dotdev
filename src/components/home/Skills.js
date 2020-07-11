@@ -11,7 +11,7 @@ import "../../assets/styles/tabs.css";
 
 export const Container = styled.div`
   border-bottom: 1px solid #dae1e7;
-  height: 650px;
+  height: 850px;
   padding: 100px 0;
 `;
 
@@ -22,6 +22,48 @@ export const Header = styled.h2`
     font-size: 36px;
     padding: 0px;
     margin-bottom: 50px;
+  }
+`;
+
+export const Columns = styled.div`
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+`;
+
+export const ColumnHeader = styled.h3`
+  margin-bottom: 50px;
+  @media screen and (max-width: 1200px) {
+    font-size: 24px;
+    text-align: center;
+  }
+`;
+
+export const EducationHeader = styled.h3`
+  margin-bottom: 50px;
+  @media screen and (max-width: 1200px) {
+    font-size: 24px;
+    text-align: center;
+  }
+`;
+
+export const List = styled.ul`
+  margin-bottom: 50px;
+  max-width: auto;
+`;
+
+export const ListItem = styled.li`
+  font-size: 24px;
+  margin: 5px auto;
+  @media screen and (max-width: 1200px) {
+    margin-left: 0;
+    list-style: none;
+    text-align: center;
   }
 `;
 
@@ -108,26 +150,76 @@ class Skills extends React.Component {
           </div>
 
           <div id="skills" className="content-page active-section">
-            <h1>Skills and Technology</h1>
-            <p>
-              Tabs are kind of cool I guess. They're kind of like, super fast
-              for displaying content and stuff. Feel welcome to lurk and copy my
-              code to play around with it for your own projects.
-            </p>
+            <h2>Skills and Technology</h2>
+            <Columns className="skills-columns">
+              <div className="column">
+                <ColumnHeader>Code</ColumnHeader>
+                <List>
+                  <ListItem>GIT</ListItem>
+                  <ListItem>HTML</ListItem>
+                  <ListItem>CSS</ListItem>
+                  <ListItem>Flexbox</ListItem>
+                  <ListItem>JavaScript</ListItem>
+                  <ListItem>React</ListItem>
+                  <ListItem>GatsbyJS</ListItem>
+                  <ListItem>WordPress/MAMP</ListItem>
+                </List>
+              </div>
+              <div className="column">
+                <ColumnHeader>Tools</ColumnHeader>
+                <List>
+                  <ListItem>VS Code</ListItem>
+                  <ListItem>GitHub</ListItem>
+                  <ListItem>Netlify</ListItem>
+                  <ListItem>Google Analytics</ListItem>
+                  <ListItem>Figma</ListItem>
+                  <ListItem>Photoshop</ListItem>
+                  <ListItem>Canva</ListItem>
+                  <ListItem>Excalidraw</ListItem>
+                </List>
+              </div>
+            </Columns>
           </div>
 
           <div id="education" className="content-page">
-            <h1>Certificates and Education</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <ul>
-              <li>Sam Smith</li>
-              <li>Alicia Keys</li>
-              <li>Etta James</li>
-            </ul>
+            <h2>Certificates and Education</h2>
+            <Columns className="skills-columns">
+              <div className="column">
+                <ColumnHeader>Certificates</ColumnHeader>
+                <List>
+                  <ListItem>
+                    <em>
+                      <b>Google Analytics for Beginners</b>
+                    </em>
+                    , Google
+                  </ListItem>
+                  <ListItem>
+                    <em>
+                      <b>Responsive Web Design</b>
+                    </em>
+                    , freeCodeCamp
+                  </ListItem>
+                  <ListItem>
+                    <em>
+                      <b>HTML, CSS, and JS Fundamentals</b>
+                    </em>
+                    , SoloLearn
+                  </ListItem>
+                  <ListItem>
+                    <em>
+                      <b>SEO Fundamentals</b>
+                    </em>
+                    , SEMrush
+                  </ListItem>
+                </List>
+              </div>
+            </Columns>
+            <EducationHeader>Education</EducationHeader>
             <p>
-              Atque exercitationem, minima accusamus maiores blanditiis
-              provident dicta suscipit! Dolorum deserunt veritatis doloremque,
-              laudantium quasi placeat autem!
+              In 2016, I earned my Bachelor of Science Degree in Exercise
+              Science from the University of Central Florida. Soon after
+              graduating, I picked up an interest in web development and
+              launched my first site in the same year.
             </p>
           </div>
         </Container>
