@@ -4,7 +4,7 @@ import styled from "styled-components";
 // Media
 import ProjectPortfolio from "../../assets/images/ProjectPortfolio.png";
 import ProjectWPBinge from "../../assets/images/ProjectWPBinge.png";
-import ProjectDotcom from "../../assets/images/ProjectDotcom.png";
+import ProjectNewsletter from "../../assets/images/ProjectNewsletter.png";
 import ProjectDashboard from "../../assets/images/ProjectDashboard.png";
 import ProjectDarkMode from "../../assets/images/ProjectDarkMode.png";
 import ProjectDroneWorld from "../../assets/images/ProjectDroneWorld.png";
@@ -119,25 +119,6 @@ class RecentWork extends React.Component {
           </a>
 
           <a
-            href="https://connorocampo.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="overlay-container">
-              <Image
-                src={ProjectDotcom}
-                alt="Personal WordPress blog."
-                className="image-hover work-image-mobile project-image"
-              />
-              <div className="overlay">
-                <p className="overlay-text">
-                  Custom WordPress theme for my personal blog.
-                </p>
-              </div>
-            </div>
-          </a>
-
-          <a
             href="https://connorocampo.github.io/lorem-dashboard/"
             target="_blank"
             rel="noopener noreferrer"
@@ -151,6 +132,25 @@ class RecentWork extends React.Component {
               <div className="overlay">
                 <p className="overlay-text">
                   Pure HTML & CSS responsive dashboard with lorem text.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://connors-mailchimp-app.herokuapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="overlay-container">
+              <Image
+                src={ProjectNewsletter}
+                alt="Newsletter signup with Mailchimp API."
+                className="image-hover work-image-mobile project-image"
+              />
+              <div className="overlay">
+                <p className="overlay-text">
+                  Newsletter signup with Mailchimp API.
                 </p>
               </div>
             </div>
