@@ -37,15 +37,6 @@ class Header extends React.Component {
           </Link>
         </span>
         <NavItems className="nav-items navbar-nav">
-          <a
-            href="https://connorocampo.com/wp-content/uploads/2020/06/Connor-Ocampo-Resume.pdf"
-            className="is-black nav-item articles-link-hide"
-            target="_blank"
-            rel="noreferrer"
-            download
-          >
-            Resume
-          </a>
           <Link to="/blog/" className="is-black nav-item articles-link-hide">
             Blog
           </Link>
