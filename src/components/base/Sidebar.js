@@ -78,7 +78,7 @@ class Sidebar extends React.Component {
           <div 
           className="tip-jar">
           <h2>Tip Jar</h2>
-          <p>I pay for the domain name and renewal out of pocket and keep the place ad-free. If anything on this site helped you in some way, please <a href="paypal.me/connorocampo" className="is-gradient">consider leaving a tip</a>.</p>
+          <p>I pay for the domain name and renewal out of pocket and keep the place ad-free. If anything on this site helped you in some way, please <a href="https://www.paypal.com/paypalme/connorocampo" className="is-gradient" target="_blank" rel="noreferrer">consider leaving a tip</a>.</p>
           </div>
         </div>
         {/* / Book */}
