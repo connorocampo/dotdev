@@ -67,26 +67,27 @@ class Sidebar extends React.Component {
           <p
             style={{
               lineHeight: "1.5",
-              margin: "25px auto 305px auto",
+              // margin: "25px auto 305px auto",
+              margin: "25px auto 60px auto",
               width: "300px",
             }}
           >
             Read my thoughts about interviewing as an LGBTQ+ person in tech in
             the book Your First Year in Code.
           </p>
+          <div 
+            style={{
+              border: "1px solid #333",
+              borderRadius: "15px",
+              padding: "1em",
+            }}>
+          <h2>Tip Jar</h2>
+          <p>I pay for the domain name and renewal out of pocket and keep the place ad-free. If anything on this site helped you in some way, please <a href="paypal.me/connorocampo" className="is-gradient">consider leaving a tip</a>.</p>
+          </div>
         </div>
         {/* / Book */}
 
-        {/* <img
-          src={WPBinge}
-          alt="Your First Year in Code Book"
-          style={{
-            height: "200px",
-            width: "200px",
-            display: "block",
-            margin: "0 auto",
-          }}
-        /> */}
+       
       </div>
       // /sidebar
     );
