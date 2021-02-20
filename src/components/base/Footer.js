@@ -116,7 +116,7 @@ class Footer extends React.Component {
               <i className="fab fa-twitter footer-icons"></i>
             </a>
           </span>
-          <p>© 2020.</p>
+          <p>© 2021.</p>
         </Copyright>
       </Container>
     );

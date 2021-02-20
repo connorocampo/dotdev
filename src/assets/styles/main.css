@@ -364,6 +364,14 @@ span {
   padding: 0 0.5em;
 }
 
+.tip-jar {
+  border: 1px solid #333;
+  border-radius: 15px;
+  padding: 1em;
+  margin-bottom: 305px;
+  width: 300px;
+}
+
 @media screen and (max-width: 1196px) {
   .blog-container {
     display: flex;

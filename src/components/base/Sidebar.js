@@ -76,12 +76,7 @@ class Sidebar extends React.Component {
             the book Your First Year in Code.
           </p>
           <div 
-            style={{
-              border: "1px solid #333",
-              borderRadius: "15px",
-              marginBottom: "305px",
-              padding: "1em",
-            }}>
+          className="tip-jar">
           <h2>Tip Jar</h2>
           <p>I pay for the domain name and renewal out of pocket and keep the place ad-free. If anything on this site helped you in some way, please <a href="paypal.me/connorocampo" className="is-gradient">consider leaving a tip</a>.</p>
           </div>
