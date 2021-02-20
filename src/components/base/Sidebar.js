@@ -79,6 +79,7 @@ class Sidebar extends React.Component {
             style={{
               border: "1px solid #333",
               borderRadius: "15px",
+              marginBottom: "305px",
               padding: "1em",
             }}>
           <h2>Tip Jar</h2>
